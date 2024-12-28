@@ -1,0 +1,60 @@
+{
+  "uuid": null,
+  "origin": null,
+  "origin id": [],
+  "series": null,
+  "title": 0,
+  "romaji title": "Romaji Title",
+  "en title": "English Title",
+  "native title": "Native Title",
+  "_title values": [
+    "0 = Romaji Version",
+    "1 = English",
+    "2 = Native"
+  ],
+  "author": "Author",
+  "artist": "Artist",
+  "publisher": null,
+  "group": "Group",
+  "locality": "jp",
+  "description": null,
+  "print language": "en",
+  "original language": "jp",
+  "format": [ ],
+  "content warnings": [ ],
+  "genre": [ ],
+  "demographic": [ ],
+  "tags": [ ],
+  "status": 2,
+  "_status values": [
+    "0 = Unknown",
+    "1 = Ongoing",
+    "2 = Completed",
+    "3 = Licensed",
+    "4 = Publishing finished",
+    "5 = Cancelled",
+    "6 = On hiatus"
+  ],
+  "translation type": 0,
+  "_translation type values": [
+    "0 = Unknown",
+    "1 = Raw",
+    "2 = Publisher",
+    "3 = Scanlation",
+    "4 = Part Scan"
+  ],
+  "contents": {
+    "none": {
+      "name": null,
+      "isbn": null,
+      "release date": null,
+      "pages": null,
+      "page_start": "single",
+      "chapters": [
+        { "position": 0, "number": 0, "en": null, "jp": null }
+      ]
+    }
+  },
+  "related": [
+  ]
+}
