@@ -4,11 +4,13 @@
     "id": { "type": "string" },
     "origin": { "type": "string" },
     "origin id": { "type": "array", "items": { "type": "integer" } },
-    "series": { "type": "string" },
-    "title": { "type": ["string", "integer"] },
-    "romaji title": { "type": "string" },
-    "en title": { "type": "string" },
-    "native title": { "type": "string" },
+    "series": { "type": ["string", "null"] },
+    "title": { "type": "integer" },
+    "romanized title": {
+      "oneOf": [{ "type": "string" }, { "array": "string" }]
+    },
+    "en title": { "oneOf": [{ "type": "string" }, { "array": "string" }] },
+    "native title": { "oneOf": [{ "type": "string" }, { "array": "string" }] },
     "_title values": {
       "type": "array",
       "items": [
@@ -19,8 +21,8 @@
     },
     "author": { "type": "string" },
     "artist": { "type": "string" },
-    "publisher": { "type": "string" },
-    "group": { "type": "string" },
+    "publisher": { "type": ["string", "null"] },
+    "group": { "type": ["string", "null"] },
     "locality": { "type": "string" },
     "description": { "type": "string" },
     "print language": { "type": "string" },
@@ -31,7 +33,7 @@
     },
     "content warnings": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": { "type": ["string", "null"] }
     },
     "genre": {
       "type": "array",
@@ -74,11 +76,11 @@
       "additionalProperties": {
         "type": "object",
         "properties": {
-          "name": { "type": "string" },
-          "isbn": { "type": "string" },
-          "release date": { "type": "string" },
+          "name": { "type": ["string", "null"] },
+          "isbn": { "type": ["string", "null"] },
+          "release date": { "type": ["string", "null"] },
           "pages": { "type": "string" },
-          "page_start": { "type": "string" },
+          "page_start": { "type": ["string", "null"] },
           "chapters": {
             "type": "array",
             "items": {
@@ -86,8 +88,8 @@
               "properties": {
                 "position": { "type": "integer" },
                 "number": { "type": "integer" },
-                "en": { "type": "string" },
-                "jp": { "type": "string" }
+                "en": { "type": ["string", "null"] },
+                "jp": { "type": ["string", "null"] }
               },
               "required": ["position", "number", "en", "jp"]
             }
@@ -109,12 +111,12 @@
     }
   },
   "required": [
-    "uuid",
+    "id",
     "origin",
     "origin id",
     "series",
     "title",
-    "romaji title",
+    "romanized title",
     "en title",
     "native title",
     "_title values",
