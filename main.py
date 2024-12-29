@@ -27,8 +27,19 @@ PARSER = argparse.ArgumentParser(
 
 def fetch_mangadex(segments, requested):
     # https://mangadex.org/title/<ID>/mousou-sensei
-    # https://api.mangadex.org/manga/<ID>?includes[]=artist&includes[]=author&includes[]=cover_art
-    pass
+    path = segments["path"].replace("/title/", "")
+    id = path[:path.find("/")]
+
+    api_url = f"https://api.mangadex.org/manga/{id}?includes[]=artist&includes[]=author&includes[]=cover_art"
+    request = requests.get(api_url)
+    if request.status_code != 200:
+        print(f"Failed to fetch response from {api_url}. Skipping metadata scrapping... Response code: {request.status_code}")
+        return None
+
+    response = request.content
+    request.close()
+
+    response = json.loads(response)
 
 
 def fetch_nhentai(segments, requested):
