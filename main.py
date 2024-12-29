@@ -1,21 +1,17 @@
 import argparse
 import os
 import platform
-import random
-import shutil
-import sys
-import time
-
-import requests
-import json
 import re
+import requests
+import nanoid
+import json
+# from jsonschema import validate, ValidationError
 
 
 CONST_URL_PATTERN = re.compile(r'^(?P<scheme>https?)://' r'(?P<domain>[^/]+)' r'(?P<path>/[^?]*)?')
 
 
 DETAILS_TEMPLATE = {}
-DETAILS = {}
 
 
 PARSER = argparse.ArgumentParser(
@@ -26,7 +22,6 @@ PARSER = argparse.ArgumentParser(
 
 
 def fetch_mangadex(segments, requested):
-    # https://mangadex.org/title/<ID>/mousou-sensei
     path = segments["path"].replace("/title/", "")
     id = path[:path.find("/")]
 
@@ -40,6 +35,17 @@ def fetch_mangadex(segments, requested):
     request.close()
 
     response = json.loads(response)
+
+    if requested == "meta":
+        # grab metadata here
+        return {}
+
+    if requested == "tags":
+        # grab tags here
+        return {}
+
+    # grab volumes/chapters here.
+    return {}
 
 
 def fetch_nhentai(segments, requested):
@@ -84,7 +90,7 @@ def meta_data(meta_url):
     if not segments:
         print(f"Failed to return segments for metadata URL: {meta_url}. Skipping.")
         return
-    print(f"Successfully found segment fetcher for {segments["domain"]}{segments["path"]}. Scrapping...")
+    print(f"Successfully found segment fetcher for {segments["domain"]}{segments["path"]}. Scraping...")
 
     fetch = choose_fetcher(segments["domain"])
     fetch(segments, "meta")
@@ -93,15 +99,18 @@ def meta_data(meta_url):
 def main():
     global PARSER
     global DETAILS_TEMPLATE
-    global DETAILS
+    details = {}
+    previous_details = {}
 
     PARSER.add_argument("-d", "--directory", dest="directory", nargs=1, default=f"{os.getcwd()}", help="Takes the root directory of the content you're trying to detail.")  # noqa: E501
     PARSER.add_argument("-t", "--tags", dest="tags", nargs=1, default=None, help="Source to grab tags from: supported visible on GitHub.")  # noqa: E501
     PARSER.add_argument("-m", "--meta", dest="meta", nargs=1, default=None, help="Source to grab metadata (author, title, etc) from.")  # noqa: E501
     PARSER.add_argument("-v", "--volume", dest="volume", nargs=1, default=None, help="Source to grab volume and chapter info from.")  # noqa: E501
+    PARSER.add_argument("-R", "--force-refresh", dest="force refresh", default=False, help="Whether to force refresh ID.", action=argparse.BooleanOptionalAction)  # noqa: E501
     args = PARSER.parse_args()
 
     directory = args.directory
+    software_dir = os.path.dirname(os.path.abspath(__file__))
     dirlim = "/"
     if platform.system() == "Windows":
         dirlim = "\\"
@@ -116,11 +125,29 @@ def main():
     if args.volume:
         meta_data(args.meta[0])
 
-    with open("details_template.json", "r") as template:
+    if os.path.exists(f"{directory}/details.json"):
+        with open("details.json", "r") as details:
+            previous_details = json.load(details)
+
+    if "id" in previous_details and previous_details["id"] != "":
+        details["id"] = previous_details["id"]
+    else:
+        details["id"] = nanoid.generate()
+
+    with open(f"{software_dir}/details_template.json", "r") as template:
         DETAILS_TEMPLATE = json.load(template)
 
-    with open("details.json", "w") as details:
-        pass
+    # try:
+    #     with (open(f"{software_dir}/schema.json", "r")) as file:
+    #         schema = json.load(file)
+    #         validate(instance=details, schema=schema)
+    # except ValidationError:
+    #     print("Error validating against schema for details.json. Write cancelled.")
+    #     print(f"{ValidationError}")
+    #     return
+
+    with open(f"{directory}/details.json", "w") as details:
+        print("Writing to details.json not implemented yet.")
 
 
 if __name__ == "__main__":
