@@ -3,10 +3,8 @@ import requests
 
 
 class MangadexFetcher:
-    regions = {
-        "ja": "jp",
-        "ko": "kr"
-    }
+    content = []
+    regions = {"ja": "jp", "ko": "kr"}
     statuses = {
         "unknown": 0,
         "ongoing": 1,
@@ -39,7 +37,33 @@ class MangadexFetcher:
 
         self.metadata = json.loads(response)
 
+    def parse(self, parser):
+        # Take in a function or a path and return the value
+        pass
+
+    def add_content(self, type):
+        self.content.append(type)
+
     def build_metadata(self):
+        # data = {
+        #     "origin": self.parse(),
+        #     "origin id": self.parse(),
+        #     "series": self.parse(),
+        #     "title": 0,
+        #     "romanized title": self.parse(),
+        #     "en title": self.parse(),
+        #     "native title": self.parse(),
+        #     "author": self.parse(),
+        #     "artist": self.parse(),
+        #     "publisher": self.parse(),
+        #     "group": self.parse(),
+        #     "locality": self.parse(),
+        #     "en description": self.parse(),
+        #     "print language": "en",
+        #     "original language": self.parse(),
+        #     "status": self.parse(),
+        #     "translation type": 3,
+        # }
         # Region/Language
         region = self.metadata["data"]["attributes"]["originalLanguage"]
         if region in self.regions:
@@ -74,7 +98,9 @@ class MangadexFetcher:
 
         # Native Description
         if region in self.metadata["data"]["attributes"]["description"]:
-            data["native description"] = self.metadata["data"]["attributes"]["description"][region],
+            data["native description"] = (
+                self.metadata["data"]["attributes"]["description"][region],
+            )
 
         # Titles
         for title in self.metadata["data"]["attributes"]["altTitles"]:
@@ -90,17 +116,23 @@ class MangadexFetcher:
                     break
 
     def build_tags():
-        pass
+        data = {
+            "format": [],
+            "content warnings": [],
+            "genre": [],
+            "demographic": [],
+            "tags": []
+        }
 
     def build_releases():
         pass
 
-    def get_details(self, requested):
-        if requested == "meta":
+    def get_details(self):
+        if "meta" in self.content:
             self.build_metadata()
-        if requested == "tags":
+        if "tags" in self.content:
             self.build_tags()
-        if requested == "releases":
+        if "releases" in self.content:
             self.build_releases()
 
         return self.details
