@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["genre", "theme", "content warning", "demographic", "format"]
+    },
+    "description": { "type": "string" },
+    "defaultLocalisation": {
+      "type": "string",
+      "enum": ["en", "jp", "ro_jp", "kr", "ro_kr", "zh-cn", "ro_zh-cn"]
+    },
+    "translations": {
+      "type": "object",
+      "properies": {
+        "en": { "type": "string" },
+        "jp": { "type": "string" },
+        "ro_jp": { "type": "string" },
+        "kr": { "type": "string" },
+        "ro_kr": { "type": "string" },
+        "zh-cn": { "type": "string" },
+        "ro_zh-cn": { "type": "string" }
+      },
+      "required:": ["en"]
+    },
+    "aliases": {
+      "type": "array",
+      "items": "string"
+    }
+  },
+  "required": ["id", "type", "defaultLocalisation", "translations", "aliases"]
+}

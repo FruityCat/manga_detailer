@@ -1,0 +1,125 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "origin": { "type": "string" },
+    "originID": { "type": "array", "items": { "type": "integer" } },
+    "series": { "type": ["string", "null"] },
+    "title": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "type": "string",
+          "enum": ["romanized", "english", "native"]
+        },
+        "en": { "oneOf": [{ "type": "string" }, { "array": "string" }] },
+        "jp": { "oneOf": [{ "type": "string" }, { "array": "string" }] },
+        "ro_jp": { "oneOf": [{ "type": "string" }, { "array": "string" }] },
+        "kr": { "oneOf": [{ "type": "string" }, { "array": "string" }] },
+        "ro_kr": { "oneOf": [{ "type": "string" }, { "array": "string" }] },
+        "zh-cn": { "oneOf": [{ "type": "string" }, { "array": "string" }] },
+        "ro_zh-cn": { "oneOf": [{ "type": "string" }, { "array": "string" }] }
+      },
+      "required": ["en"]
+    },
+    "author": { "type": "array", "items":"string" },
+    "artist": { "type": "array", "items":"string" },
+    "publisher": { "type": ["string", "null"] },
+    "group": { "type": ["string", "null"] },
+    "locality": { "type": "string" },
+    "description": { "type": "string" },
+    "printLanguage": { "type": "string" },
+    "originalLanguage": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "object",
+            "properies": {
+              "en": { "type": "string" }
+            },
+            "additionalProperties": { "type": "string" }
+          },
+          "type": { "type": "string" },
+          "tagID": { "type": "string" }
+        },
+        "required": ["type", "tag id"]
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "ongoing",
+        "completed",
+        "licensed",
+        "publishing finished",
+        "cancelled",
+        "on hiatus"
+      ]
+    },
+    "translationType": {
+      "type": "string",
+      "enum": ["unknown", "raw", "publisher", "scanlation", "part scanlation"]
+    },
+    "contents": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": { "type": ["string", "null"] },
+          "isbn": { "type": ["string", "null"] },
+          "releaseDate": { "type": ["string", "null"] },
+          "pages": { "type": "string" },
+          "pageStart": { "type": ["string", "null"] },
+          "chapters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "position": { "type": "integer" },
+                "number": { "type": "integer" },
+                "en": { "type": ["string", "null"] },
+                "jp": { "type": ["string", "null"] }
+              },
+              "required": ["position", "number", "en", "jp"]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "isbn",
+          "release date",
+          "pages",
+          "page_start",
+          "chapters"
+        ]
+      }
+    },
+    "related": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": [
+    "id",
+    "origin",
+    "originID",
+    "series",
+    "title",
+    "author",
+    "artist",
+    "publisher",
+    "group",
+    "locality",
+    "description",
+    "printLanguage",
+    "originalLanguage",
+    "tags",
+    "status",
+    "translationType",
+    "contents"
+  ]
+}

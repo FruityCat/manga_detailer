@@ -7,11 +7,7 @@
   "romanized title": null,
   "en title": null,
   "native title": null,
-  "_title values": [
-    "0 = Romaji Version",
-    "1 = English",
-    "2 = Native"
-  ],
+  "_title values": ["0 = Romaji Version", "1 = English", "2 = Native"],
   "author": null,
   "artist": null,
   "publisher": null,
@@ -20,11 +16,13 @@
   "description": null,
   "print language": null,
   "original language": null,
-  "format": [ ],
-  "content warnings": [ ],
-  "genre": [ ],
-  "demographic": [ ],
-  "tags": [ ],
+  "tags": {
+    "tag": {
+      "type": "",
+      "tag id": ""
+    }
+  },
+  "_tag types": ["genre", "format", "content warning", "demographic", "theme"],
   "status": 0,
   "_status values": [
     "0 = Unknown",
@@ -50,11 +48,8 @@
       "release date": null,
       "pages": null,
       "page_start": "single",
-      "chapters": [
-        { "position": 0, "number": 0, "en": null, "jp": null }
-      ]
+      "chapters": [{ "position": 0, "number": 0, "en": null, "jp": null }]
     }
   },
-  "related": [
-  ]
+  "related": []
 }

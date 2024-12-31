@@ -1,0 +1,21 @@
+{
+  "types": ["genre", "format", "content warning", "demographic", "theme"],
+  "tags": [
+    {
+      "id": "",
+      "type": "genre",
+      "description": "A genre focusing on stories about lesbian romance. Stories are typically slow burning and often have a focus on drama.",
+      "defaultLocalisation": "en",
+      "translations": {
+        "en": "Girls' Love",
+        "jp": "百合",
+        "ro_jp": "Yuri",
+        "kr": "백합",
+        "ro_kr": "Baekhap",
+        "zh-cn": "百合",
+        "ro_zh-cn": "Baihe"
+      },
+      "aliases": ["GL", "Lesbian", "Sapphic"]
+    }
+  ]
+}
