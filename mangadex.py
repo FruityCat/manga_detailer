@@ -5,15 +5,7 @@ import requests
 class MangadexFetcher:
     content = []
     regions = {"ja": "jp", "ko": "kr"}
-    statuses = {
-        "unknown": 0,
-        "ongoing": 1,
-        "completed": 2,
-        "licensed": 3,
-        "publishing finished": 4,
-        "cancelled": 5,
-        "on hiatus": 6,
-    }
+    types = ["genre", "theme", "content warning", "demographic", "format"]
 
     url = {}
     metadata = {}
@@ -37,33 +29,10 @@ class MangadexFetcher:
 
         self.metadata = json.loads(response)
 
-    def parse(self, parser):
-        # Take in a function or a path and return the value
-        pass
-
     def add_content(self, type):
         self.content.append(type)
 
     def build_metadata(self):
-        # data = {
-        #     "origin": self.parse(),
-        #     "origin id": self.parse(),
-        #     "series": self.parse(),
-        #     "title": 0,
-        #     "romanized title": self.parse(),
-        #     "en title": self.parse(),
-        #     "native title": self.parse(),
-        #     "author": self.parse(),
-        #     "artist": self.parse(),
-        #     "publisher": self.parse(),
-        #     "group": self.parse(),
-        #     "locality": self.parse(),
-        #     "en description": self.parse(),
-        #     "print language": "en",
-        #     "original language": self.parse(),
-        #     "status": self.parse(),
-        #     "translation type": 3,
-        # }
         # Region/Language
         region = self.metadata["data"]["attributes"]["originalLanguage"]
         if region in self.regions:
@@ -78,22 +47,23 @@ class MangadexFetcher:
 
         data = {
             "origin": self.url["domain"],
-            "origin id": [id],
+            "originID": [id],
             "series": None,
             "title": 0,
-            "romanized title": [self.metadata["data"]["attributes"]["title"]["en"]],
-            "en title": [],
-            "native title": [],
+            "romanizedTitle": [self.metadata["data"]["attributes"]["title"]["en"]],
+            "enTitle": [],
+            "nativeTitle": [],
             "author": creators["author"],
             "artist": creators["artist"],
             "publisher": None,
             "group": None,
             "locality": region_code,
-            "en description": self.metadata["data"]["attributes"]["description"]["en"],
-            "print language": "en",
-            "original language": region_code,
-            "status": self.statuses[self.metadata["data"]["status"]],
-            "translation type": 3,
+            "description": {
+                "en": self.metadata["data"]["attributes"]["description"]["en"]
+            },
+            "printLanguage": "en",
+            "originalLanguage": region_code,
+            "status": self.metadata["data"]["status"],
         }
 
         # Native Description
@@ -115,14 +85,10 @@ class MangadexFetcher:
                     data["romanized title"].append(value)
                     break
 
-    def build_tags():
-        data = {
-            "format": [],
-            "content warnings": [],
-            "genre": [],
-            "demographic": [],
-            "tags": []
-        }
+    def build_tags(self):
+        tags = []
+        for tag in self.metadata["data"]["attributes"]["tags"]:
+            tags.append(tags.find(tag["attributes"]["name"]["en"]))
 
     def build_releases():
         pass

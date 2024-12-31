@@ -45,7 +45,7 @@ def get_url_segments(url):
     return None
 
 
-def fetch(url, type):
+def update_fetchers(url, fetchers, type):
     segments = get_url_segments(url)
     if not segments:
         print(f"Failed to return segments for metadata URL: {url}. Skipping.")
@@ -54,8 +54,13 @@ def fetch(url, type):
         f"Successfully found segment fetcher for {segments["domain"]}{segments["path"]}. Scraping..."
     )
 
-    fetcher = choose_fetcher(segments["domain"], segments)
-    return fetcher.get_details(type)
+    # We want to either add more information for a fetcher to fetch or if the fetcher doesn't exist
+    # add it as a fetcher source.
+    if segments["domain"] not in fetchers:
+        fetchers[segments["domain"]] = choose_fetcher(segments["domain"], segments)
+
+    fetchers[segments["domain"]].add_content(type)
+    return fetchers
 
 
 def main():
@@ -63,6 +68,8 @@ def main():
     global DETAILS_TEMPLATE
     details = {}
     previous_details = {}
+
+    fetchers = {}
 
     PARSER.add_argument(
         "-d",
@@ -123,19 +130,12 @@ def main():
     if directory.startswith("./") or directory.startswith(".\\"):
         directory = f"{os.getcwd()}{dirlim}{directory[2:]}"
 
-    # This feels pretty gross...
-    # Two options, we recreate the SourceFetcher object every time for meta, tags, and releases.
-    # or... we somehow add the ones needed to a list with the needed information stored and only
-    # create the fetcher object once.
-    # Just recreating it everytime is easier at the moment.
-    # could have like... metabuilder, tags builder, and releases builder. Somehow have meta and
-    # tag builder point to the same object and add the flag via a setter. (Yes... do this.)
     if args.meta:
-        details.append(fetch(args.meta[0], "meta"))
+        fetchers = update_fetchers(args.meta[0], fetchers, "meta")
     if args.tags:
-        details.append(fetch(args.tags[0], "tags"))
+        fetchers = update_fetchers(args.tags[0], fetchers, "tags")
     if args.releases:
-        details.append(fetch(args.releases[0], "releases"))
+        fetchers = update_fetchers(args.releases[0], fetchers, "releases")
 
     if os.path.exists(f"{directory}/details.json"):
         with open("details.json", "r") as details:
