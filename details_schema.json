@@ -43,9 +43,9 @@
             "additionalProperties": { "type": "string" }
           },
           "type": { "type": "string" },
-          "tagID": { "type": "string" }
+          "id": { "type": "string" }
         },
-        "required": ["type", "tag id"]
+        "required": ["type", "id"]
       }
     },
     "status": {
