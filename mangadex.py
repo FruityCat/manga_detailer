@@ -88,7 +88,7 @@ class MangadexFetcher:
     def build_tags(self):
         tags = []
         for tag in self.metadata["data"]["attributes"]["tags"]:
-            tags.append(tags.find(tag["attributes"]["name"]["en"]))
+            tags.append(TagTools.find(tag["attributes"]["name"]["en"]))
 
     def build_releases():
         pass
