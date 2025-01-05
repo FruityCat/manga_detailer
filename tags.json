@@ -52,9 +52,12 @@
     "translations": {
       "en": "Adult Couples"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "adult[ -_]{0,1}couples{0,1}" }
+      {
+        "target": "default",
+        "regex": "adult[ -_]{0,1}couples{0,1}"
+      }
     ]
   },
   {
@@ -77,7 +80,12 @@
       "en": "Afterlife"
     },
     "aliases": {},
-    "alternateSpellings": [{ "target": "default", "regex": "after[-_ ]{0,1}lifes{0,1}" }]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "after[-_ ]{0,1}lifes{0,1}"
+      }
+    ]
   },
   {
     "id": "RUFd2D5n0xJsTd5xbXjZh",
@@ -88,7 +96,12 @@
       "en": "Age Gap"
     },
     "aliases": {},
-    "alternateSpellings": [{ "target": "default", "regex": "age[-_]{0,1}gap" }]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "age[-_]{0,1}gap"
+      }
+    ]
   },
   {
     "id": "_SUt4Ur5reSDG-_GDsLsD",
@@ -100,7 +113,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "age[-_]{0,1}transformation" }
+      {
+        "target": "default",
+        "regex": "age[-_]{0,1}transformation"
+      }
     ]
   },
   {
@@ -134,7 +150,12 @@
       "en": "Aliens"
     },
     "aliases": {},
-    "alternateSpellings": [{ "target": "default", "regex": "Ali[ea]ns{0,1}" }]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "Ali[ea]ns{0,1}"
+      }
+    ]
   },
   {
     "id": "l8upn1RT0tU4M7x1bQpra",
@@ -176,11 +197,17 @@
     "translations": {
       "en": "Amnesia"
     },
-    "aliases": ["Memory Loss"],
+    "aliases": {
+      "oW1j1fqKd1gjVnLmUiY_q": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Memory Loss"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "alias",
-        "id": "Memory Loss",
+        "id": "oW1j1fqKd1gjVnLmUiY_q",
         "regex": "memory[-_]{0,1}loss"
       }
     ]
@@ -195,7 +222,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "ancient[-_]{0,1}china" }
+      {
+        "target": "default",
+        "regex": "ancient[-_]{0,1}china"
+      }
     ]
   },
   {
@@ -264,7 +294,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "animal[_-]{0,1}transformation" }
+      {
+        "target": "default",
+        "regex": "animal[_-]{0,1}transformation"
+      }
     ]
   },
   {
@@ -288,7 +321,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "apartment[-_]{0,1}life" }
+      {
+        "target": "default",
+        "regex": "apartment[-_]{0,1}life"
+      }
     ]
   },
   {
@@ -312,7 +348,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "arranged[-_]{0,1}marriage" }
+      {
+        "target": "default",
+        "regex": "arranged[-_]{0,1}marriage"
+      }
     ]
   },
   {
@@ -324,7 +363,12 @@
       "en": "Art Book"
     },
     "aliases": {},
-    "alternateSpellings": [{ "target": "default", "regex": "art[-_]{0,1}book" }]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "art[-_]{0,1}book"
+      }
+    ]
   },
   {
     "id": "aN-jlz8bzOm1ms2CyobwJ",
@@ -336,7 +380,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "assassin(?:ation){0,1}" }
+      {
+        "target": "default",
+        "regex": "assassin(?:ation){0,1}"
+      }
     ]
   },
   {
@@ -364,7 +411,12 @@
       "en": "Basketball"
     },
     "aliases": {},
-    "alternateSpellings": [{ "target": "default", "regex": "basket[-_ ]{0,1}balls{0,1}" }]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "basket[-_ ]{0,1}balls{0,1}"
+      }
+    ]
   },
   {
     "id": "DL2ph4Ah1Cu3EzHw5Xwnk",
@@ -378,7 +430,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "(?:bath[-_ ]{0,1}houses{0,1})|(?:sentou)" }
+      {
+        "target": "default",
+        "regex": "(?:bath[-_ ]{0,1}houses{0,1})|(?:sentou)"
+      }
     ]
   },
   {
@@ -391,7 +446,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "battle[-_]{0,1}royale{0,1}" }
+      {
+        "target": "default",
+        "regex": "battle[-_]{0,1}royale{0,1}"
+      }
     ]
   },
   {
@@ -414,11 +472,20 @@
       "en": "Coercion"
     },
     "aliases": {
-      "SNKhFz-AUrAzvj2kZOLUp": { "trueAlias": false, "en": "Extortion" },
-      "Yg5FU4dHwtB5q3wtxlzVE": { "trueAlias": true, "en": "Blackmail" }
+      "SNKhFz-AUrAzvj2kZOLUp": {
+        "trueAlias": false,
+        "en": "Extortion"
+      },
+      "Yg5FU4dHwtB5q3wtxlzVE": {
+        "trueAlias": true,
+        "en": "Blackmail"
+      }
     },
     "alternateSpellings": [
-      { "target": "default", "regex": "coer[st]ion" },
+      {
+        "target": "default",
+        "regex": "coer[st]ion"
+      },
       {
         "target": "alias",
         "id": "Yg5FU4dHwtB5q3wtxlzVE",
@@ -441,7 +508,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "boarding[-_]{0,1}house" }
+      {
+        "target": "default",
+        "regex": "boarding[-_]{0,1}house"
+      }
     ]
   },
   {
@@ -497,7 +567,8 @@
     "translations": {
       "en": "Boss-Employee Relationship"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "5_Qe0hZ2KBlaSDwfIo9Sf",
@@ -507,7 +578,8 @@
     "translations": {
       "en": "Bounty Hunter"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "2rWf9w5oxHCsoN9r7mjqs",
@@ -517,7 +589,8 @@
     "translations": {
       "en": "Fourth Wall Breaking"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "-xzmKoJEeONRN3wbE0gid",
@@ -527,7 +600,8 @@
     "translations": {
       "en": "Brother Complex"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "DtRHL3JrO-bwLw4kNzGtd",
@@ -537,7 +611,8 @@
     "translations": {
       "en": "Butler"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "gJtOu1MPVk1wHaI8M1vD5",
@@ -547,7 +622,8 @@
     "translations": {
       "en": "Cafe"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "4wu_UqjjKom7a_VbQjpnn",
@@ -557,7 +633,8 @@
     "translations": {
       "en": "Card Battle"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "cEUnLQO46-kmJARmUEuPC",
@@ -567,7 +644,8 @@
     "translations": {
       "en": "Cars"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "CsLWSy0lmc44s5yrmluPl",
@@ -577,7 +655,8 @@
     "translations": {
       "en": "Catholic School"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "dZXNeRHk9lCN5WAT5-JpV",
@@ -587,7 +666,8 @@
     "translations": {
       "en": "Cheats"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "jqKBTi8azNFRLUhzLo9vE",
@@ -597,7 +677,8 @@
     "translations": {
       "en": "Cheerleading"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "oXwK32zhUTDAaiTQJHlQD",
@@ -607,7 +688,8 @@
     "translations": {
       "en": "Chess"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Um5RJTh-cMUGUMCKxE3S9",
@@ -617,7 +699,8 @@
     "translations": {
       "en": "Childcare"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "OUnzo2U3ls0aRKTBgOSKP",
@@ -627,7 +710,8 @@
     "translations": {
       "en": "Childhood Friend"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "74f2uF6FVP2fIF3olZDQQ",
@@ -637,7 +721,8 @@
     "translations": {
       "en": "Childhood Promise"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "NnjqUsxMhis-dhDaihvbi",
@@ -647,7 +732,8 @@
     "translations": {
       "en": "Child Protagonist"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "9W7OiYxG_6COf0WfEMqFD",
@@ -657,7 +743,8 @@
     "translations": {
       "en": "Christianity"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "9QDPJFxSDHqw2nu2sOot4",
@@ -667,7 +754,8 @@
     "translations": {
       "en": "Christmas"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "SRPLXCXOriklvGOeXoc_p",
@@ -677,7 +765,8 @@
     "translations": {
       "en": "Circus"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "fltcoM8cri3NJHKutYCwi",
@@ -687,7 +776,8 @@
     "translations": {
       "en": "Codependency"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "d6_AAM2wXL8Y7qqMprWIZ",
@@ -697,7 +787,8 @@
     "translations": {
       "en": "Cohabitation"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "MyWW8wQYKWkMHAT9A2vI-",
@@ -707,11 +798,17 @@
     "translations": {
       "en": "College"
     },
-    "aliases": ["University"],
+    "aliases": {
+      "FNjL-zPBtqOJA2hih3G4v": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "University"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "alias",
-        "id": "University",
+        "id": "FNjL-zPBtqOJA2hih3G4v",
         "regex": "(?:uni)|(?:varsity)"
       }
     ]
@@ -724,7 +821,8 @@
     "translations": {
       "en": "Combining Mecha"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "UyGbEnML42JzGJdH-CM4V",
@@ -734,13 +832,59 @@
     "translations": {
       "en": "Comedy"
     },
-    "aliases": ["Dark Comedy", "Slapstick Comedy", "Gag Comedy", "Crude Comedy", "Dry Comedy"],
+    "aliases": {
+      "6PdkaRGqXRUmcmf4eWCcC": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Dark Comedy"
+      },
+      "mKOCSws_Rmt76fimu4P29": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Slapstick Comedy"
+      },
+      "YDMROeIHCwYsR_5PhNhKo": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Gag Comedy"
+      },
+      "MnYboWPtPX0nV-lp7G7Vc": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Crude Comedy"
+      },
+      "OHGBlig23pLhRBEWy8Yh2": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Dry Comedy"
+      }
+    },
     "alternateSpellings": [
-      {"target": "alias", "id": "Dark Comedy", "regex": "dark[-_ ]{0,1}(?:humor|comedy)"},
-      {"target": "alias", "id": "Slapstick Comedy", "regex": "slap[-_ ]{0,1}stick[-_ ]{0,1}(?:humor|comedy)"},
-      {"target": "alias", "id": "Gag Comedy", "regex": "gag[-_ ]{0,1}(?:humor|comedy)"},
-      {"target": "alias", "id": "Crude Comedy", "regex": "crude[-_ ]{0,1}(?:humor|comedy)"},
-      {"target": "alias", "id": "Dry Comedy", "regex": "dry[-_ ]{0,1}(?:humor|comedy)"}
+      {
+        "target": "alias",
+        "id": "6PdkaRGqXRUmcmf4eWCcC",
+        "regex": "dark[-_ ]{0,1}(?:humor|comedy)"
+      },
+      {
+        "target": "alias",
+        "id": "mKOCSws_Rmt76fimu4P29",
+        "regex": "slap[-_ ]{0,1}stick[-_ ]{0,1}(?:humor|comedy)"
+      },
+      {
+        "target": "alias",
+        "id": "YDMROeIHCwYsR_5PhNhKo",
+        "regex": "gag[-_ ]{0,1}(?:humor|comedy)"
+      },
+      {
+        "target": "alias",
+        "id": "MnYboWPtPX0nV-lp7G7Vc",
+        "regex": "crude[-_ ]{0,1}(?:humor|comedy)"
+      },
+      {
+        "target": "alias",
+        "id": "OHGBlig23pLhRBEWy8Yh2",
+        "regex": "dry[-_ ]{0,1}(?:humor|comedy)"
+      }
     ]
   },
   {
@@ -753,7 +897,10 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "coming[-_ ]{0,1}of[-_ ]{0,1}age" }
+      {
+        "target": "default",
+        "regex": "coming[-_ ]{0,1}of[-_ ]{0,1}age"
+      }
     ]
   },
   {
@@ -764,7 +911,8 @@
     "translations": {
       "en": "Concubine"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "j4f37s2aXFJ30iRNcEZaN",
@@ -774,7 +922,8 @@
     "translations": {
       "en": "Conspiracy"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "go0Q6DpQSClyGd-KwGDMG",
@@ -784,12 +933,26 @@
     "translations": {
       "en": "Cooking"
     },
-    "aliases": ["Cuisine", "Chef"],
+    "aliases": {
+      "MdQTBx9tnSc36wBBs9FJG": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Cuisine"
+      },
+      "tLA1AaGUjrEr3t1ezX1_3": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Chef"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "cook(?:ery){0,1}|bak(?:e|ing)" },
+      {
+        "target": "default",
+        "regex": "cook(?:ery){0,1}|bak(?:e|ing)"
+      },
       {
         "target": "alias",
-        "id": "Cuisine",
+        "id": "MdQTBx9tnSc36wBBs9FJG",
         "regex": "foods{0,1}|bak(?:ed|ing)[-_ ]{0,1}goods{0,1}"
       }
     ]
@@ -802,7 +965,8 @@
     "translations": {
       "en": "Coworkers"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "gqMPS82eqszxtcF5z36AL",
@@ -812,7 +976,8 @@
     "translations": {
       "en": "Crime"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "SJUGWqop2QDgEE6q1qAOH",
@@ -822,7 +987,8 @@
     "translations": {
       "en": "Criminal"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "RD-uqCOk6ferxlcOUU0nZ",
@@ -832,7 +998,7 @@
     "translations": {
       "en": "Crossdressing"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
       {
         "target": "default",
@@ -848,9 +1014,12 @@
     "translations": {
       "en": "Crossover"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "cross[-_ ]{0,1}over(?:ers{0,1}){0,1}" }
+      {
+        "target": "default",
+        "regex": "cross[-_ ]{0,1}over(?:ers{0,1}){0,1}"
+      }
     ]
   },
   {
@@ -861,7 +1030,8 @@
     "translations": {
       "en": "Crude"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "F4kQzfBScU72bf6OWng36",
@@ -871,7 +1041,8 @@
     "translations": {
       "en": "Curse"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Is92eNloC8s_WK9Jw8n8g",
@@ -881,7 +1052,8 @@
     "translations": {
       "en": "Cyberpunk"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "D2QSxIs4KUKdiIQV5tfyb",
@@ -891,7 +1063,13 @@
     "translations": {
       "en": "Dancing"
     },
-    "aliases": ["Ballet"],
+    "aliases": {
+      "-Xl_opH2HE5hd-x6_6ULq": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Ballet"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "default",
@@ -899,7 +1077,7 @@
       },
       {
         "target": "alias",
-        "id": "Ballet",
+        "id": "-Xl_opH2HE5hd-x6_6ULq",
         "regex": "(?:ballet )Danc(e(?:rs{0,1}){0,1}|ing)"
       }
     ]
@@ -912,7 +1090,7 @@
     "translations": {
       "en": "Deal with the Devil"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
       {
         "target": "default",
@@ -928,8 +1106,13 @@
     "translations": {
       "en": "Delinquents"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "delinquent" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "delinquent"
+      }
+    ]
   },
   {
     "id": "Ze8hxM9TiqMRochTuqWjI",
@@ -939,7 +1122,8 @@
     "translations": {
       "en": "Demon King"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "q0i4W-BYw5i17BabKm0DB",
@@ -950,11 +1134,33 @@
       "en": "Demons",
       "ro_jp": "Oni"
     },
-    "aliases": ["Succubus", "Incubus"],
+    "aliases": {
+      "cU9PP6ZRhn2b_m2EwrAEZ": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Succubus"
+      },
+      "K_4Y3qjzgJzsUlerJTtW1": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Incubus"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "demon" },
-      { "target": "alias", "id": "Succubus", "regex": "succub(?:i|uses)" },
-      { "target": "alias", "id": "Incubus", "regex": "incub(?:i|uses)" }
+      {
+        "target": "default",
+        "regex": "demon"
+      },
+      {
+        "target": "alias",
+        "id": "cU9PP6ZRhn2b_m2EwrAEZ",
+        "regex": "succub(?:i|uses)"
+      },
+      {
+        "target": "alias",
+        "id": "K_4Y3qjzgJzsUlerJTtW1",
+        "regex": "incub(?:i|uses)"
+      }
     ]
   },
   {
@@ -965,8 +1171,13 @@
     "translations": {
       "en": "Detectives"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "detective" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "detective"
+      }
+    ]
   },
   {
     "id": "B2hcAytgHT6b5lL-biijT",
@@ -1025,7 +1236,7 @@
     "translations": {
       "en": "Dragons"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
       {
         "target": "default",
@@ -1041,7 +1252,8 @@
     "translations": {
       "en": "Drama"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Mpeam4Yjzq8VMRitOMoZT",
@@ -1051,7 +1263,8 @@
     "translations": {
       "en": "Dream World"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "p9P6nIEbwuGs0mFrVO3Ru",
@@ -1061,7 +1274,8 @@
     "translations": {
       "en": "Dungeon"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "MzOCBE8nTcFuR3h8Wrfez",
@@ -1071,7 +1285,8 @@
     "translations": {
       "en": "Dysfunctional Family"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "zgYcwbfN7eLR4KbUj6BIm",
@@ -1081,8 +1296,13 @@
     "translations": {
       "en": "Dystopian"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "dystopia" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "dystopia"
+      }
+    ]
   },
   {
     "id": "I_4sof6C2BbcWAk_XjrPh",
@@ -1092,7 +1312,8 @@
     "translations": {
       "en": "Egyptian Mythology"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "2urxwQn1ikLrFlFZIEiG5",
@@ -1102,7 +1323,8 @@
     "translations": {
       "en": "Elemental Powers"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "ouj-Y_aGJsdLQvEN3Mx9m",
@@ -1112,7 +1334,8 @@
     "translations": {
       "en": "Elf"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "ZZFC80gzGMDbaEHla61cD",
@@ -1122,7 +1345,8 @@
     "translations": {
       "en": "Episodic"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "6gWgpqJN4HfBgrGFkVM_l",
@@ -1132,7 +1356,8 @@
     "translations": {
       "en": "Espionage"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "KV0EwneX_nozZv9TyVuVT",
@@ -1142,7 +1367,8 @@
     "translations": {
       "en": "Fake Romance"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "NPB9MyjjSCr_UUTKFFlCn",
@@ -1152,7 +1378,8 @@
     "translations": {
       "en": "Family Life"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "YaMRY5kvDmKUmqCv3QTdr",
@@ -1162,31 +1389,47 @@
     "translations": {
       "en": "Fantasy"
     },
-    "aliases": [
-      "Contemporary Fantasy",
-      "Urban Fantasy",
-      "High Fantasy",
-      "Dark Fantasy"
-    ],
+    "aliases": {
+      "X8uHmKb2OdjGoBjfZuax8": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Contemporary Fantasy"
+      },
+      "xnr500dT-1svA8J5O1xOR": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Urban Fantasy"
+      },
+      "FlBPr5IhNJ-5Qe6vEFnn9": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "High Fantasy"
+      },
+      "rZ99_U3rGG8duyQCKiXm-": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Dark Fantasy"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "alias",
-        "id": "Contemporary Fantasy",
+        "id": "X8uHmKb2OdjGoBjfZuax8",
         "regex": "contemporary[-_ ]{0,1}fantasy"
       },
       {
         "target": "alias",
-        "id": "Urban Fantasy",
+        "id": "xnr500dT-1svA8J5O1xOR",
         "regex": "urban[-_ ]{0,1}fantasy"
       },
       {
         "target": "alias",
-        "id": "High Fantasy",
+        "id": "FlBPr5IhNJ-5Qe6vEFnn9",
         "regex": "high[-_ ]{0,1}fantasy"
       },
       {
         "target": "alias",
-        "id": "Dark Fantasy",
+        "id": "rZ99_U3rGG8duyQCKiXm-",
         "regex": "dark[-_ ]{0,1}fantasy"
       }
     ]
@@ -1199,7 +1442,8 @@
     "translations": {
       "en": "Fated Lovers"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "MyPtKIXumvp0I5GuqE1ld",
@@ -1209,7 +1453,8 @@
     "translations": {
       "en": "Feudal Japan"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "h3gKX1yL2mAPC9zpsDzO6",
@@ -1219,8 +1464,13 @@
     "translations": {
       "en": "Football"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "soccer" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "soccer"
+      }
+    ]
   },
   {
     "id": "SjxSQViqJHk8REwUJxRJO",
@@ -1230,17 +1480,31 @@
     "translations": {
       "en": "Full Colour"
     },
-    "aliases": ["Fan Coloured", "Official Coloured"],
+    "aliases": {
+      "9SrtlgZEWwJCLd3PLjkKd": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Fan Coloured"
+      },
+      "q10WdjlwbVWdelUYJ-zmL": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Official Coloured"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "(?:fully{0,1}[-_ ]{0,1}){0,1}color" },
+      {
+        "target": "default",
+        "regex": "(?:fully{0,1}[-_ ]{0,1}){0,1}color"
+      },
       {
         "target": "alias",
-        "id": "Fan Coloured",
+        "id": "9SrtlgZEWwJCLd3PLjkKd",
         "regex": "fan[-_ ]{0,1}colou{0,1}r(?:ed){0,1}"
       },
       {
         "target": "alias",
-        "id": "Official Coloured",
+        "id": "q10WdjlwbVWdelUYJ-zmL",
         "regex": "official[-_ ]{0,1}colou{0,1}r(?:ed){0,1}"
       }
     ]
@@ -1253,9 +1517,23 @@
     "translations": {
       "en": "Gambling"
     },
-    "aliases": ["Poker", "Blackjack"],
+    "aliases": {
+      "p7QRFs9enpM63qK-9o1Mg": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Poker"
+      },
+      "qjWQP3wdPlk9DNSp-cZy6": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Blackjack"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "gamble(?:rs{0,1}){0,1}" }
+      {
+        "target": "default",
+        "regex": "gamble(?:rs{0,1}){0,1}"
+      }
     ]
   },
   {
@@ -1266,7 +1544,8 @@
     "translations": {
       "en": "Game Elements"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "X0S2qdOkxLC6NLACXUfcX",
@@ -1276,27 +1555,51 @@
     "translations": {
       "en": "Gangs"
     },
-    "aliases": ["Biker Gangs", "Cartel", "Yakuza", "Mafia"],
+    "aliases": {
+      "VmtM1yoYlIb7yL78tBaX8": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Biker Gangs"
+      },
+      "Yk9tgUyFlDGJVd5a1AE3H": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Cartel"
+      },
+      "8qW02GELImGk9MKez0Ry2": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Yakuza"
+      },
+      "wLaI79IoTKHoZmjr7X-L1": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Mafia"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "gang" },
+      {
+        "target": "default",
+        "regex": "gang"
+      },
       {
         "target": "alias",
-        "id": "Cartel",
+        "id": "Yk9tgUyFlDGJVd5a1AE3H",
         "regex": "(?:(?:mexican|south[-_ ]{0,1}american){0,1}drug){0,1}[-_ ]{0,1}cartels{0,1}"
       },
       {
         "target": "alias",
-        "id": "Yakuza",
+        "id": "8qW02GELImGk9MKez0Ry2",
         "regex": "japanese[-_ ]{0,1}(?:mafia|gangs{0,1})"
       },
       {
         "target": "alias",
-        "id": "Mafia",
+        "id": "wLaI79IoTKHoZmjr7X-L1",
         "regex": "italian[-_ ]{0,1}(?:mafia|gangs{0,1})"
       },
       {
         "target": "alias",
-        "id": "Biker Gangs",
+        "id": "VmtM1yoYlIb7yL78tBaX8",
         "regex": "(?:biker|motor[-_ ]{0,1}(?:cycle|bike))[-_ ]{0,1}(?:gangs{0,1})"
       }
     ]
@@ -1309,13 +1612,33 @@
     "translations": {
       "en": "Gender Bender"
     },
-    "aliases": [
-      "Transgender",
-      "Trans-woman",
-      "Trans-man",
-      "Non-binary",
-      "Gender Fluid"
-    ],
+    "aliases": {
+      "bWtkWzxX0eYUOdc4BJ0ms": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Transgender"
+      },
+      "Z-Pnn1lzH_JfCDEc5Xoxa": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Trans-woman"
+      },
+      "iDW7qlFk-uq3xKzzYXOpG": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Trans-man"
+      },
+      "2cAjz5GrRUK2ObkCS1Jil": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Non-binary"
+      },
+      "V7ws2hPrF3rqhj2jN06BQ": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Gender Fluid"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "default",
@@ -1323,27 +1646,27 @@
       },
       {
         "target": "alias",
-        "id": "Transgender",
+        "id": "bWtkWzxX0eYUOdc4BJ0ms",
         "regex": "tran(?:n{0,1}y|s(?:[-_ ]{0,1}genders{0,1}){0,1}){0,1}"
       },
       {
         "target": "alias",
-        "id": "Trans-woman",
+        "id": "Z-Pnn1lzH_JfCDEc5Xoxa",
         "regex": "trans(?:[-_ ]{0,1}(?:wom[ae]n|fem(?:me|inine)))"
       },
       {
         "target": "alias",
-        "id": "Trans-man",
+        "id": "iDW7qlFk-uq3xKzzYXOpG",
         "regex": "trans(?:[-_ ]{0,1}(?:m[ae]n|masc(?:uline){0,1}))"
       },
       {
         "target": "alias",
-        "id": "Non-binary",
+        "id": "2cAjz5GrRUK2ObkCS1Jil",
         "regex": "non[-_ ]{0,1}binary|nb|enby"
       },
       {
         "target": "alias",
-        "id": "Gender Fluid",
+        "id": "V7ws2hPrF3rqhj2jN06BQ",
         "regex": "gender[-_ ]{0,1}fluid"
       }
     ]
@@ -1356,9 +1679,12 @@
     "translations": {
       "en": "Gender Identity"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "gender(?:[-_]{0,1}identity){0,1}" }
+      {
+        "target": "default",
+        "regex": "gender(?:[-_]{0,1}identity){0,1}"
+      }
     ]
   },
   {
@@ -1369,7 +1695,8 @@
     "translations": {
       "en": "God-Human Relationship"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Gj_KzWOeMvjnZNHNfq8Pd",
@@ -1380,7 +1707,8 @@
       "en": "Gods",
       "ro_jp": "Kami"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "jkQBBbwy2IeVmEBTDuGOz",
@@ -1390,7 +1718,8 @@
     "translations": {
       "en": "Harem"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "tfR9cQh0fkhhBK0auGLNF",
@@ -1400,7 +1729,8 @@
     "translations": {
       "en": "Hell"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "7hPktTeeyL3reX1y3wHHA",
@@ -1410,7 +1740,8 @@
     "translations": {
       "en": "High Stakes Game"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "SK5mSCQwvvLLwA7VDBq2Y",
@@ -1420,7 +1751,8 @@
     "translations": {
       "en": "Historical"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Ip6UHg3N2ky6E7yGlbE_u",
@@ -1430,7 +1762,8 @@
     "translations": {
       "en": "Horror"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "AOG5UdnfaYxCJAxSNGQum",
@@ -1440,7 +1773,8 @@
     "translations": {
       "en": "Human Experimentation"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "0vx0v_Fs5jno7STV2Z1x8",
@@ -1450,7 +1784,8 @@
     "translations": {
       "en": "Human Livestock"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "CzgfJAJ5_N_79VlfEggjC",
@@ -1460,12 +1795,21 @@
     "translations": {
       "en": "Human Pet"
     },
-    "aliases": ["Pet Play"],
+    "aliases": {
+      "TjO9kuIhPp8WrlePa-Gmy": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Pet Play"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "human[-_]pets{0,1}" },
+      {
+        "target": "default",
+        "regex": "human[-_]pets{0,1}"
+      },
       {
         "target": "alias",
-        "id": "Pet Play",
+        "id": "TjO9kuIhPp8WrlePa-Gmy",
         "regex": "pet[-_]play(?:ing|ers{0,1}){0,1}"
       }
     ]
@@ -1478,7 +1822,8 @@
     "translations": {
       "en": "Idol"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "65l2Qa2S68MIO77-PIXYQ",
@@ -1488,7 +1833,8 @@
     "translations": {
       "en": "Illness"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "UkT0KqLdo8U_djXQc3om1",
@@ -1498,7 +1844,8 @@
     "translations": {
       "en": "Impersonation"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "AfPgKvwegC5cejikesaLM",
@@ -1508,7 +1855,8 @@
     "translations": {
       "en": "Cheating"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "IJ4qUnajFecxlSIa_P8m9",
@@ -1518,9 +1866,12 @@
     "translations": {
       "en": "Insects"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "insect|bugs{0,1}|creepy[-_ ]{0,1}crawlies" }
+      {
+        "target": "default",
+        "regex": "insect|bugs{0,1}|creepy[-_ ]{0,1}crawlies"
+      }
     ]
   },
   {
@@ -1531,7 +1882,13 @@
     "translations": {
       "en": "Interspecies Relationship"
     },
-    "aliases": ["Beastiality"],
+    "aliases": {
+      "ivuADXeuEjuK5mbm1QxHu": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Beastiality"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "default",
@@ -1539,7 +1896,7 @@
       },
       {
         "target": "alias",
-        "id": "Beastiality",
+        "id": "ivuADXeuEjuK5mbm1QxHu",
         "regex": "inter[-_ ]{0,1}species[-_ ]{0,1}sex{0,1}"
       }
     ]
@@ -1554,7 +1911,18 @@
       "ro_jp": "Isekai",
       "jp": "異世界"
     },
-    "aliases": ["Parallel Universe", "Different-dimension World"],
+    "aliases": {
+      "LFYOj6slgtCxiT0lMAwBU": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Parallel Universe"
+      },
+      "Lv1AZzxo0DLsIpI_IIL30": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Different-dimension World"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "default",
@@ -1562,12 +1930,12 @@
       },
       {
         "target": "alias",
-        "id": "Parallel Universe",
+        "id": "LFYOj6slgtCxiT0lMAwBU",
         "regex": "parallel[-_]{0,1}universe"
       },
       {
         "target": "alias",
-        "id": "Different-dimension World",
+        "id": "Lv1AZzxo0DLsIpI_IIL30",
         "regex": "different[-_ ]{0,1}dimension[-_ ]{0,1}world"
       }
     ]
@@ -1580,7 +1948,8 @@
     "translations": {
       "en": "Isolated Society"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "5fZLZ1YPPyY6qzRqs8KN7",
@@ -1590,7 +1959,8 @@
     "translations": {
       "en": "Japanese Mythology"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "s_1S5lxsbr4KIHXn7Pkhr",
@@ -1600,11 +1970,17 @@
     "translations": {
       "en": "Band"
     },
-    "aliases": ["School Band"],
+    "aliases": {
+      "KeFtm4N9G9kEApx1pQ7HV": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "School Band"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "alias",
-        "id": "School Band",
+        "id": "KeFtm4N9G9kEApx1pQ7HV",
         "regex": "school[-_]bands{0,1}"
       }
     ]
@@ -1617,7 +1993,8 @@
     "translations": {
       "en": "Kidnapping"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "ksWrf00Uxjv2oBKNUkeec",
@@ -1627,7 +2004,8 @@
     "translations": {
       "en": "Queer"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "MkG2J3ZVmjYEHaM50ld1z",
@@ -1637,7 +2015,8 @@
     "translations": {
       "en": "Light Novel"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "aXZ3SBJ0UxAQiUnnaGD0J",
@@ -1647,7 +2026,8 @@
     "translations": {
       "en": "Love Triangle"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "5o4_jE-3yUDhM-KZV-lDu",
@@ -1657,7 +2037,8 @@
     "translations": {
       "en": "Magic"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "hNrjMyxluFGmX4BQyaRBu",
@@ -1669,7 +2050,7 @@
       "ro_jp": "Mahō Shōjo",
       "jp": "魔法少女"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
       {
         "target": "default",
@@ -1685,7 +2066,8 @@
     "translations": {
       "en": "Magic School"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "xuPeM9AjhCGWL0THZltGT",
@@ -1695,9 +2077,12 @@
     "translations": {
       "en": "Maids"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "(?:french[-_ ]{0,1}){0,1}maids{0,1}" }
+      {
+        "target": "default",
+        "regex": "(?:french[-_ ]{0,1}){0,1}maids{0,1}"
+      }
     ]
   },
   {
@@ -1708,7 +2093,8 @@
     "translations": {
       "en": "Married Life"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "QFQKvhFEzGYbAn8rN8Zyf",
@@ -1718,7 +2104,14 @@
     "translations": {
       "en": "Martial Arts"
     },
-    "aliases": ["Martial Art"]
+    "aliases": {
+      "-H_qF83hANDiNmwpRXqMs": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Martial Art"
+      }
+    },
+    "alternateSpellings": []
   },
   {
     "id": "pNcoVqpxLNGdHV5yEVIy_",
@@ -1728,7 +2121,8 @@
     "translations": {
       "en": "Master-Servant Relationship"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "LXAXPNkeuuHCoLRcuDxsM",
@@ -1738,7 +2132,8 @@
     "translations": {
       "en": "Mature Romance"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "2PUtxjIpgMb8on0CG9n2f",
@@ -1748,7 +2143,8 @@
     "translations": {
       "en": "Mecha"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "LuClLE6KRXMZUYzWt9XE7",
@@ -1758,7 +2154,8 @@
     "translations": {
       "en": "Medical"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "GmfZ374eK0UL6L-Zug_5m",
@@ -1768,7 +2165,8 @@
     "translations": {
       "en": "Medieval"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "_qbkRFAzSekFj0yJgU3-n",
@@ -1778,7 +2176,8 @@
     "translations": {
       "en": "Melancholy"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "W8qixqdoRsaOWD17XhYbP",
@@ -1788,7 +2187,8 @@
     "translations": {
       "en": "Mental Illness"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "09qTZSG0bdyXXX4wWj3ux",
@@ -1798,7 +2198,8 @@
     "translations": {
       "en": "Military"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "c8rIl_ecSgnbQoh3NXjG8",
@@ -1808,7 +2209,8 @@
     "translations": {
       "en": "Military School"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "9sBCF9zfMgLdB9PSJf7dF",
@@ -1818,7 +2220,8 @@
     "translations": {
       "en": "Mind Games"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "wXLjRFAAAlVB-WyKa8hOz",
@@ -1828,7 +2231,8 @@
     "translations": {
       "en": "MMORPG"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "_-_PTLmwR7429-CLNkOmi",
@@ -1838,7 +2242,8 @@
     "translations": {
       "en": "Monster Girls"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "j6BCgf4RHwD-_budAkgEx",
@@ -1848,7 +2253,14 @@
     "translations": {
       "en": "Monsters"
     },
-    "aliases": ["Monster"]
+    "aliases": {
+      "514fQxJpljfu8da3fcHX9": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Monster"
+      }
+    },
+    "alternateSpellings": []
   },
   {
     "id": "myn-BzMXt-VYRxCeFO2Dk",
@@ -1858,7 +2270,8 @@
     "translations": {
       "en": "Monster School"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "CYrhjGZq2iK-z7DaAse73",
@@ -1868,7 +2281,8 @@
     "translations": {
       "en": "Music"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "9_5CKUzWl5W_pZ4Xv_Fde",
@@ -1878,7 +2292,8 @@
     "translations": {
       "en": "Music School"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "qD5C6NVFqNWhVQSKrYWpY",
@@ -1888,7 +2303,8 @@
     "translations": {
       "en": "Mystery"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "zhtugNzW9R-jG7g5us7Dr",
@@ -1898,7 +2314,8 @@
     "translations": {
       "en": "Natural Disaster"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "ebjY4DoE7oScFOV3-KgZ1",
@@ -1908,7 +2325,8 @@
     "translations": {
       "en": "NEET"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "T7OHJwDhn8VGMKoleZ4p5",
@@ -1918,7 +2336,8 @@
     "translations": {
       "en": "Neighbors"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "AjBOsQZXx3CRPmaALIfsQ",
@@ -1928,7 +2347,8 @@
     "translations": {
       "en": "Newly Co-ed School"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "-5qjIZ6gsor7EWdYOg5iq",
@@ -1938,7 +2358,8 @@
     "translations": {
       "en": "Ninja"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "qEC2Y8D1naLiKXMe5Mmmg",
@@ -1948,7 +2369,8 @@
     "translations": {
       "en": "Nobility"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "JM9mEAyGS8KwRfen3wRFr",
@@ -1958,7 +2380,8 @@
     "translations": {
       "en": "No Dialogue"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "KU5iD2P-qtJyBQtJEMXBs",
@@ -1968,7 +2391,8 @@
     "translations": {
       "en": "Noir"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "wMj18blQ7COLNdt-OV71N",
@@ -1978,7 +2402,8 @@
     "translations": {
       "en": "Non-Human Protagonist"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "qO3f5BimObFK3SLd7ugB0",
@@ -1988,7 +2413,8 @@
     "translations": {
       "en": "Nurse"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "MmaQXGuwfBDqYanDJlKzq",
@@ -1998,7 +2424,8 @@
     "translations": {
       "en": "Obsessive Love"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "2pTSi2XvCTiWG8mmeZyNq",
@@ -2008,7 +2435,8 @@
     "translations": {
       "en": "One-Night Stand"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "UHtOaMkVDsZk2SCeMutqb",
@@ -2018,7 +2446,8 @@
     "translations": {
       "en": "Opposites Attract"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Q54d9OkVILUJzssdu7DAi",
@@ -2028,7 +2457,8 @@
     "translations": {
       "en": "Otaku Culture"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "WHs0YdhDqntvnSPhrrFfM",
@@ -2038,7 +2468,8 @@
     "translations": {
       "en": "Overpowered Main Character"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "eoibIvy5gVZh7aTnMrhf2",
@@ -2048,7 +2479,8 @@
     "translations": {
       "en": "Pandemic"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "phGHztRjVNMUBbmVaqxE8",
@@ -2058,7 +2490,8 @@
     "translations": {
       "en": "Parody"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "1xk-nj5vh_U7sqpoGagr3",
@@ -2068,7 +2501,8 @@
     "translations": {
       "en": "Person in a Strange World"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "6WnWK5aAHLWVDcvfK5q6D",
@@ -2078,7 +2512,8 @@
     "translations": {
       "en": "Pilot Chapter"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "BYIs-3GsxILODb5ODm6jl",
@@ -2088,7 +2523,14 @@
     "translations": {
       "en": "Pirates"
     },
-    "aliases": ["Pirate"]
+    "aliases": {
+      "V6uMYLXTmMMg5FqgeOrmp": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Pirate"
+      }
+    },
+    "alternateSpellings": []
   },
   {
     "id": "aec4gjfuB-TmElpOuuGNZ",
@@ -2098,7 +2540,8 @@
     "translations": {
       "en": "Play or Die"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "lw1ujT-PYss0TO_TcL1X8",
@@ -2108,7 +2551,8 @@
     "translations": {
       "en": "Pole Dancing"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "VlcSwWZ3V1Mx49G65haLF",
@@ -2118,7 +2562,8 @@
     "translations": {
       "en": "Police"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "F1lJRuRjDUB1nb_3IbJbK",
@@ -2128,8 +2573,13 @@
     "translations": {
       "en": "Political"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "politics{0,1}" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "politics{0,1}"
+      }
+    ]
   },
   {
     "id": "M45m8rLydeDY9ZjbkLoMc",
@@ -2139,7 +2589,8 @@
     "translations": {
       "en": "Polyamory"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "xWxfFR--WpIfohoPNvXR5",
@@ -2149,7 +2600,8 @@
     "translations": {
       "en": "Possessive Lover"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "vBuF_y-0-tZTKTeliH0qj",
@@ -2159,9 +2611,12 @@
     "translations": {
       "en": "Post-apocalyptic"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "post[-_ ]{0,1}apocalyp(?:se|tic)" }
+      {
+        "target": "default",
+        "regex": "post[-_ ]{0,1}apocalyp(?:se|tic)"
+      }
     ]
   },
   {
@@ -2172,7 +2627,8 @@
     "translations": {
       "en": "Poverty"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "xd6sB-BuC9zwwTY8Lq5G4",
@@ -2182,7 +2638,8 @@
     "translations": {
       "en": "Pregnant"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "MLlv8pCfJ65XOWoPKPh5w",
@@ -2192,7 +2649,8 @@
     "translations": {
       "en": "Prehistoric"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "crReak2Mxx_Z6YSE-4Ylf",
@@ -2202,7 +2660,8 @@
     "translations": {
       "en": "Prison"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "wc3NQ403uOmm64MwkYFU-",
@@ -2212,7 +2671,8 @@
     "translations": {
       "en": "Psychic Powers"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "VLEOUvCB7oTH6s1vj1Y8S",
@@ -2222,7 +2682,8 @@
     "translations": {
       "en": "Psychological"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "CG6EagbG9QV1713Vx8DkY",
@@ -2232,7 +2693,8 @@
     "translations": {
       "en": "Psychopath"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "tZd3KydVyEqtZ7j_l3SNn",
@@ -2242,7 +2704,8 @@
     "translations": {
       "en": "PVE"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "xNP9LRAmIE9zuYhnLEwH9",
@@ -2252,7 +2715,8 @@
     "translations": {
       "en": "PVP"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "jQanqhT3IHsXhr3BZTA41",
@@ -2262,7 +2726,8 @@
     "translations": {
       "en": "Rebellion"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Ea5nyFIqt14I2E6aSu6xz",
@@ -2272,7 +2737,8 @@
     "translations": {
       "en": "Reincarnation"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "leKmH-_wMBdOg2fhoNGTf",
@@ -2282,7 +2748,8 @@
     "translations": {
       "en": "Religion"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "0M6nok_-YVBHXBwCjcckH",
@@ -2292,7 +2759,8 @@
     "translations": {
       "en": "Remarriage"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "51oZ30d__4AIhu9hevNvQ",
@@ -2302,7 +2770,8 @@
     "translations": {
       "en": "Revenge"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "mlm7hI7OkFWGVLUJ8ci1g",
@@ -2312,7 +2781,8 @@
     "translations": {
       "en": "Reverse Harem"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "BXM5YDq4nGij9KgLVtQ4d",
@@ -2322,7 +2792,8 @@
     "translations": {
       "en": "Reverse Isekai"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "oW_wja9Z0d7PlaXQowMid",
@@ -2332,7 +2803,8 @@
     "translations": {
       "en": "Rivalry"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "bPorqNtoCd1LNUqXu-HtK",
@@ -2342,7 +2814,8 @@
     "translations": {
       "en": "Romance"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "h4_J1KebqK0wUG6qL2azN",
@@ -2352,7 +2825,8 @@
     "translations": {
       "en": "Romantic Comedy"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "sN323nJLeqLpcuUp_6yfV",
@@ -2362,7 +2836,8 @@
     "translations": {
       "en": "Roommate"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "cRoh9WrHqe6HxYuz8Isob",
@@ -2372,7 +2847,8 @@
     "translations": {
       "en": "Salaryman"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "kOPvHjAyp3JxgrLZHiGVd",
@@ -2382,7 +2858,8 @@
     "translations": {
       "en": "Samurai"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "5VYuPMQqgiqH8QvAL9JbE",
@@ -2392,7 +2869,8 @@
     "translations": {
       "en": "Satire"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "rFgnrh1FjWbLTxnZg69zE",
@@ -2402,7 +2880,8 @@
     "translations": {
       "en": "School Club"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "9DubUeAV90ZsFrd2-NeuR",
@@ -2412,7 +2891,8 @@
     "translations": {
       "en": "School Life"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "UTD0r7TkeLQ2Gzfm9ccWS",
@@ -2422,7 +2902,7 @@
     "translations": {
       "en": "Sci-Fi"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
       {
         "target": "default",
@@ -2438,7 +2918,8 @@
     "translations": {
       "en": "Second Chance"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "lP_-aFJfwDuhFY-jy6hKg",
@@ -2448,7 +2929,8 @@
     "translations": {
       "en": "Secret Identity"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "XqR-drPJ2ixAla2En2Zja",
@@ -2458,7 +2940,8 @@
     "translations": {
       "en": "Sentient Mecha"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "t6JlPlGaPXd-lYIKSPp1W",
@@ -2468,7 +2951,8 @@
     "translations": {
       "en": "Serial Killer"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "22aSHenKeql7ZWoF20YO7",
@@ -2478,7 +2962,8 @@
     "translations": {
       "en": "Showbiz"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "vx_siORZVx8hNmK4XHBc2",
@@ -2488,7 +2973,8 @@
     "translations": {
       "en": "Siblings"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "m1xKT7LTjL18hpnADR1FO",
@@ -2498,7 +2984,8 @@
     "translations": {
       "en": "Single Parent"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "HqMQjoywlE2tf0Xm0RvFS",
@@ -2508,7 +2995,8 @@
     "translations": {
       "en": "Sister Complex"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "jO4iD1sENyxIVjDkWo1L5",
@@ -2520,7 +3008,7 @@
       "ro_jp": "Nichijō",
       "jp": "日常"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
       {
         "target": "default",
@@ -2536,7 +3024,8 @@
     "translations": {
       "en": "Slimes"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "2droCEbVlAkY3d7ZX4j81",
@@ -2546,7 +3035,8 @@
     "translations": {
       "en": "Slow Life"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "i8C7beQ32ksS1xtknPVWy",
@@ -2556,7 +3046,8 @@
     "translations": {
       "en": "Social Gap"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Y2J84TFeH4qQfrd2os9th",
@@ -2566,7 +3057,8 @@
     "translations": {
       "en": "Space Opera"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "t2XLDcRmH4PoBMng5AFFL",
@@ -2576,7 +3068,8 @@
     "translations": {
       "en": "Split Personality"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "g6W4Z-yi3MbmShlDS2icL",
@@ -2586,7 +3079,8 @@
     "translations": {
       "en": "Stalker"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "fB3-MWFYIUCSzedJdIGF7",
@@ -2596,7 +3090,8 @@
     "translations": {
       "en": "Star-Crossed Lovers"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "FbL8FFaL_twoRHwfkDaGZ",
@@ -2606,7 +3101,8 @@
     "translations": {
       "en": "Steampunk"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "6AtTL58y276m5XHI9MwoJ",
@@ -2616,7 +3112,8 @@
     "translations": {
       "en": "Stockholm Syndrome"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "RsmhCQ8JjtPNR4PTn0z_o",
@@ -2626,7 +3123,8 @@
     "translations": {
       "en": "Student Council"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "jQihpfN-SpsW2_u9LR7gp",
@@ -2636,7 +3134,8 @@
     "translations": {
       "en": "Student-Teacher Relationship"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "aBtc4A_ZVtDhIDr1a1ddo",
@@ -2646,9 +3145,12 @@
     "translations": {
       "en": "Superhero"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "super[-_ ]{0,1}hero(?:es){0,1}" }
+      {
+        "target": "default",
+        "regex": "super[-_ ]{0,1}hero(?:es){0,1}"
+      }
     ]
   },
   {
@@ -2659,7 +3161,8 @@
     "translations": {
       "en": "Supernatural"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "gMvYP4lKL8Gv3w8-mJZuo",
@@ -2669,8 +3172,13 @@
     "translations": {
       "en": "Superpowers"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "superpowers{0,1}" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "superpowers{0,1}"
+      }
+    ]
   },
   {
     "id": "sUNZ28ajraHELr6RCFF8u",
@@ -2680,7 +3188,8 @@
     "translations": {
       "en": "Survival"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "aIQkF-TdvdOxqrzWERQn9",
@@ -2690,11 +3199,17 @@
     "translations": {
       "en": "Swimming"
     },
-    "aliases": ["Swim Club"],
+    "aliases": {
+      "tcSL0gWHHYeMJwr6c3Sx0": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Swim Club"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "alias",
-        "id": "Swim Club",
+        "id": "tcSL0gWHHYeMJwr6c3Sx0",
         "regex": "(?:school[-_ ]{0,1}){0,1}swim[-_ ]{0,1}clubs{0,1}"
       }
     ]
@@ -2709,9 +3224,12 @@
       "ro_jp": "Sensei",
       "jp": "先生"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "teach(?:ers|ing){0,1}" }
+      {
+        "target": "default",
+        "regex": "teach(?:ers|ing){0,1}"
+      }
     ]
   },
   {
@@ -2722,7 +3240,8 @@
     "translations": {
       "en": "Terrorism"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "J7GUJMXRO2ZxVHuRe4jmv",
@@ -2732,7 +3251,8 @@
     "translations": {
       "en": "Thriller"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "PhM-0Tu5bOTlSFLhFLM-e",
@@ -2742,7 +3262,8 @@
     "translations": {
       "en": "Time Loop"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "X3kZ0sfL19kK-kZn88Sdj",
@@ -2752,7 +3273,8 @@
     "translations": {
       "en": "Time Travel"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "sSKja_3TjFl9s5kRZFdW5",
@@ -2762,7 +3284,8 @@
     "translations": {
       "en": "Transfer Student"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "C1tP2AJeXK1xHg07kCTZu",
@@ -2772,7 +3295,8 @@
     "translations": {
       "en": "Unrequited Love"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "ufcqSEHqFFsbtwNikAgUC",
@@ -2782,9 +3306,12 @@
     "translations": {
       "en": "Vampires"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "vampire(?:ss){0,1}" }
+      {
+        "target": "default",
+        "regex": "vampire(?:ss){0,1}"
+      }
     ]
   },
   {
@@ -2795,7 +3322,8 @@
     "translations": {
       "en": "Vigilante"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "z_mrz8B1h1yGFK3IuVZ0_",
@@ -2805,7 +3333,8 @@
     "translations": {
       "en": "Villainess"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Jtdx6TZCbmfgkVMLMCSBb",
@@ -2815,7 +3344,7 @@
     "translations": {
       "en": "Virtual Reality"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
       {
         "target": "default",
@@ -2831,7 +3360,8 @@
     "translations": {
       "en": "War"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "6ibGkv2LgXQAQ0obj4cbW",
@@ -2841,7 +3371,8 @@
     "translations": {
       "en": "Weak to Strong"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "o249FBuo4eI-OGLavdLZU",
@@ -2851,7 +3382,8 @@
     "translations": {
       "en": "Web Novel"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "oz9xaAbcLioO99Tr-bnFm",
@@ -2861,7 +3393,8 @@
     "translations": {
       "en": "Webtoon"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "2Tf_rsEsvpIsitzOEKRlb",
@@ -2871,9 +3404,33 @@
     "translations": {
       "en": "Witchcraft"
     },
-    "aliases": ["Witch", "Witches", "Witchery", "Hag"],
+    "aliases": {
+      "71TFBJ4wyAFM3i6PgA1jy": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Witch"
+      },
+      "Tv-AA0LcCnFGt0PEeIS7e": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Witches"
+      },
+      "R2HGX8xXyCEcgESP_TONC": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Witchery"
+      },
+      "Eu5onI-T2mA7LH5GP72SC": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Hag"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "witch(?:es|ery){0,1}|hag" }
+      {
+        "target": "default",
+        "regex": "witch(?:es|ery){0,1}|hag"
+      }
     ]
   },
   {
@@ -2884,7 +3441,8 @@
     "translations": {
       "en": "Work Life"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "xqZhpoZcBZzkHZFHsi2B4",
@@ -2894,7 +3452,8 @@
     "translations": {
       "en": "World War 1"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "xqZhpoZcBZzkHZFHsi2B4",
@@ -2904,7 +3463,8 @@
     "translations": {
       "en": "World War 2"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "OscCX-jcz6PO0OChdgsxG",
@@ -2914,7 +3474,8 @@
     "translations": {
       "en": "Zodiac"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Es6Vnp7o2MdNCrQNLikzI",
@@ -2924,7 +3485,8 @@
     "translations": {
       "en": "Zombie"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "c5NxFOcj1HnrC0Y9hVSDw",
@@ -2936,7 +3498,8 @@
       "ro_jp": "Seinen",
       "jp": "青年"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "S0u9vUWNiHGDG-cIRj-ln",
@@ -2946,7 +3509,8 @@
     "translations": {
       "en": "Senpai-Kouhai Relationship"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "rsAvsu9mmvf-A5g3B44pe",
@@ -2956,7 +3520,8 @@
     "translations": {
       "en": "Shinigami"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "A9MzwGmwNpnxl6GJgNuWC",
@@ -2968,7 +3533,8 @@
       "jp": "少女",
       "ro_jp": "Shoujo"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "TNS8dLnte_s2VMXTJvvIO",
@@ -2978,7 +3544,8 @@
     "translations": {
       "en": "Yaoi Hand Syndrome"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "oygU2IrRp1bnLn2Qi4_Rx",
@@ -2989,7 +3556,8 @@
       "ro_jp": "Youkai",
       "jp": "妖怪"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "FFLz2D-hRM2tIvN9Mum3g",
@@ -3000,7 +3568,8 @@
       "ro_jp": "Tsundere",
       "jp": "ツンデレ"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "yDqj_h6dFJfQZ3Ds7CpGb",
@@ -3012,8 +3581,19 @@
       "ro_jp": "Tiinzurabu",
       "jp": "ティーンズラブ"
     },
-    "aliases": ["TL"],
-    "alternateSpellings": [{ "target": "default", "regex": "TL" }]
+    "aliases": {
+      "bQInOE0qIKwlDkXNHhyrb": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "TL"
+      }
+    },
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "TL"
+      }
+    ]
   },
   {
     "id": "ehO7o79-GJKhZx_iCVZ7f",
@@ -3025,8 +3605,13 @@
       "ro_jp": "Shōnen",
       "jp": "少年"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "shounen" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "shounen"
+      }
+    ]
   },
   {
     "id": "YAp6-2WlUhWs2qOk4YCcl",
@@ -3036,9 +3621,12 @@
     "translations": {
       "en": "Oneshot"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "one[-_ ]{0,1}shot" }
+      {
+        "target": "default",
+        "regex": "one[-_ ]{0,1}shot"
+      }
     ]
   },
   {
@@ -3055,7 +3643,8 @@
       "kr": "만화",
       "zh-ch": "漫画"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "y8vYgR4BIBFgDof5IZAXO",
@@ -3065,8 +3654,13 @@
     "translations": {
       "en": "Kaijū"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "kaijuu" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "kaijuu"
+      }
+    ]
   },
   {
     "id": "1PgQusqMO0UHB__iGaafo",
@@ -3077,7 +3671,8 @@
       "ro_jp": "Iyashikei",
       "jp": "癒し系"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "cUUIRZ1d6HbndfcK0RlNe",
@@ -3089,11 +3684,17 @@
       "ro_jp": "Guro",
       "jp": " グロ"
     },
-    "aliases": ["Ero-guro"],
+    "aliases": {
+      "lfUwt35uLO480x-P12_aC": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Ero-guro"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "alias",
-        "id": "Ero-guro",
+        "id": "lfUwt35uLO480x-P12_aC",
         "regex": "ero(?:tic){0,1}[-_]{0,1}gore|ero[_ ]{0,1}guro"
       }
     ]
@@ -3112,7 +3713,23 @@
       "zh-ch": "百合",
       "ro_zh-cn": "Baihe"
     },
-    "aliases": ["Shōjo Ai", "Lesbian", "Sapphic"],
+    "aliases": {
+      "e2K1nPaEoMbRCepigNUOc": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Shōjo Ai"
+      },
+      "aIatkHeTYs_MCzxZ2hLfP": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Lesbian"
+      },
+      "0V3DPjPLt79bE87yyBl_3": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Sapphic"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "default",
@@ -3120,7 +3737,7 @@
       },
       {
         "target": "alias",
-        "id": "Shōjo Ai",
+        "id": "e2K1nPaEoMbRCepigNUOc",
         "regex": "sh(?:ou|ō)jo[-_ ]{0,1}ai"
       }
     ]
@@ -3139,12 +3756,31 @@
       "zh-ch": "耽美",
       "ro_zh-cn": "Danmei"
     },
-    "aliases": ["Bara", "Shōnen Ai", "少年愛"],
+    "aliases": {
+      "LG3SZupF62ho45yn1Blyy": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Bara"
+      },
+      "_trQubUgKMGaw2Hxm6DxL": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Shōnen Ai"
+      },
+      "M6tsAnaQ-tZaw68_ultqy": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "少年愛"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "bl|boys{0,1}'{0,1}[-_ ]{0,1}love|bara" },
+      {
+        "target": "default",
+        "regex": "bl|boys{0,1}'{0,1}[-_ ]{0,1}love|bara"
+      },
       {
         "target": "alias",
-        "id": "Shōnen Ai",
+        "id": "_trQubUgKMGaw2Hxm6DxL",
         "regex": "sh(?:ou|ō)nen[-_ ]{0,1}ai"
       }
     ]
@@ -3158,7 +3794,8 @@
       "ro_jp": "Gyaru",
       "jp": "ギャル"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "OLeSXky-gTVJhZpznl9DD",
@@ -3170,7 +3807,8 @@
       "jp": "腐男子",
       "ro_jp": "Fudanshi"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "241wA0CeLkg5rioK0pbub",
@@ -3182,7 +3820,8 @@
       "ro_jp": "Fujoshi",
       "jp": "腐女子"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "7HS7EHvtDKBPbEbWHNaXq",
@@ -3194,7 +3833,8 @@
       "ro_jp": "Chibi",
       "jp": "禿び"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "9WGDFCp8epk6lIcNV9wk6",
@@ -3206,8 +3846,29 @@
       "ro_jp": "Ecchi",
       "jp": "エッチ"
     },
-    "aliases": ["エイチ", "Ｈ", "ｈ"],
-    "alternateSpellings": [{ "target": "default", "regex": "エイチ|Ｈ|ｈ" }]
+    "aliases": {
+      "fjSP1NPxtdjAn9mApQqoO": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "エイチ"
+      },
+      "S8EJ1Ga1A00Wi4HIqTxKX": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Ｈ"
+      },
+      "P9RFFzv8G1730Q6kVmKus": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "ｈ"
+      }
+    },
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "エイチ|Ｈ|ｈ"
+      }
+    ]
   },
   {
     "id": "QHBdGb1P8n7gs-5YYHsw3",
@@ -3219,9 +3880,28 @@
       "ro_jp": "Dōjinshi",
       "jp": "同人誌"
     },
-    "aliases": ["Zine", "", "Fanzine"],
+    "aliases": {
+      "RmMLgGbhAQnYV_k5NYqeA": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Zine"
+      },
+      "b6G9U4OuEBBvdz6_c69o7": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": ""
+      },
+      "sodoytTb_wZRfc6IxyzbV": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Fanzine"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "independent[-_ ]{0,1}comics{0,1}|同人" },
+      {
+        "target": "default",
+        "regex": "independent[-_ ]{0,1}comics{0,1}|同人"
+      },
       {
         "target": "alias",
         "id": "Dōjinshi",
@@ -3238,7 +3918,8 @@
       "ro_jp": "Rakugo",
       "jp": "落語"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "LSMsl4Vp2wyBxc3sb6Nsi",
@@ -3249,7 +3930,8 @@
       "ro_zh-cn": "Wuxia",
       "zh-cn": "武俠"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "QP44R_BKyI76MWScwhK_H",
@@ -3260,8 +3942,13 @@
       "ro_zh-cn": "Xianxia",
       "zh-cn": "仙侠"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "仙俠" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "仙俠"
+      }
+    ]
   },
   {
     "id": "4s4E2D2RqQbrb6oKfbPlj",
@@ -3271,7 +3958,8 @@
     "translations": {
       "en": "Novel"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "qd3I5E-uP2FQDnXqKedrR",
@@ -3282,7 +3970,8 @@
       "ro_jp": "Josei",
       "jp": "女性"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Z2Z8go89T6zRqN-5-EMoz",
@@ -3294,7 +3983,8 @@
       "ro_jp": "Hentai",
       "jp": "変態"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "KdoYKTms0S9Sg81CrqrYk",
@@ -3304,7 +3994,8 @@
     "translations": {
       "en": "Suggestive"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "UTEaz4ssg1RzjDEXt5Yy8",
@@ -3314,7 +4005,8 @@
     "translations": {
       "en": "Abuse"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "nEctpq2Hijw_7tw8-nDZJ",
@@ -3324,7 +4016,8 @@
     "translations": {
       "en": "Sexual Violence"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "Nkck4cWCpZFM-7JEbhqNA",
@@ -3334,7 +4027,8 @@
     "translations": {
       "en": "Adaption"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "9xF-G0Tnrrwcx00WtHGjV",
@@ -3344,7 +4038,8 @@
     "translations": {
       "en": "Award Winning"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "pi68yRNgURJD0zc-jN7zS",
@@ -3354,7 +4049,8 @@
     "translations": {
       "en": "Self-published"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "h_S7PsxtAoHB4A3lcyEGH",
@@ -3364,7 +4060,8 @@
     "translations": {
       "en": "Long Strip"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "UaTeYcb27MoUMffBM5K8D",
@@ -3374,7 +4071,8 @@
     "translations": {
       "en": "Web Comic"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "z65AnYmf4WXZN_DnbDBKo",
@@ -3384,8 +4082,13 @@
     "translations": {
       "en": "Philosophical"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "philosophy" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "philosophy"
+      }
+    ]
   },
   {
     "id": "KMrJRGscw5qLwlcDIzI8U",
@@ -3395,8 +4098,13 @@
     "translations": {
       "en": "Sports"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "sport" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "sport"
+      }
+    ]
   },
   {
     "id": "F58_N1W8QowPOqK5pPkFN",
@@ -3406,7 +4114,8 @@
     "translations": {
       "en": "Tragedy"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "fXql8xZ7EecmHwpBUKR0P",
@@ -3416,8 +4125,13 @@
     "translations": {
       "en": "Animals"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "animal" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "animal"
+      }
+    ]
   },
   {
     "id": "Swc0tvW_1QqODX33PLxHO",
@@ -3427,8 +4141,13 @@
     "translations": {
       "en": "Ghosts"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "ghost" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "ghost"
+      }
+    ]
   },
   {
     "id": "_6EJhFrI5OrvndoyvCi8d",
@@ -3438,7 +4157,8 @@
     "translations": {
       "en": "Incest"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "YEwxhRdHF1RZlFQ1Kfda3",
@@ -3448,8 +4168,13 @@
     "translations": {
       "en": "Loli"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "lolicon" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "lolicon"
+      }
+    ]
   },
   {
     "id": "JsPSXbzV1GUb-sEqZZHqe",
@@ -3459,8 +4184,13 @@
     "translations": {
       "en": "Shota"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "shotacon" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "shotacon"
+      }
+    ]
   },
   {
     "id": "U4HgyNSTbegpBIQRaETqC",
@@ -3470,7 +4200,8 @@
     "translations": {
       "en": "Traditional Games"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "okNJZLoEkROTsL_VuZgsP",
@@ -3480,9 +4211,18 @@
     "translations": {
       "en": "Video Games"
     },
-    "aliases": ["Video Game"],
+    "aliases": {
+      "gf1NyridJfVvj1KnUEw2-": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Video Game"
+      }
+    },
     "alternateSpellings": [
-      { "target": "default", "regex": "video[-_ ]{0,1}games{0,1}" }
+      {
+        "target": "default",
+        "regex": "video[-_ ]{0,1}games{0,1}"
+      }
     ]
   },
   {
@@ -3493,8 +4233,13 @@
     "translations": {
       "en": "Bullying"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "bully" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "bully"
+      }
+    ]
   },
   {
     "id": "kt0slZSQqsB1ddqCkWQKH",
@@ -3504,7 +4249,8 @@
     "translations": {
       "en": "Genderswap"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "jz-_teobVh9hiBrOl0C1v",
@@ -3514,9 +4260,12 @@
     "translations": {
       "en": "Office Workers"
     },
-    "aliases": [],
+    "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "office[-_ ]{0,1}workers{0,1}" }
+      {
+        "target": "default",
+        "regex": "office[-_ ]{0,1}workers{0,1}"
+      }
     ]
   },
   {
@@ -3528,7 +4277,8 @@
       "ro_jp": "Yandere",
       "jp": "ヤンデレ"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   },
   {
     "id": "cBjCshypKROEg1Jshbkz8",
@@ -3539,8 +4289,13 @@
       "ro_jp": "Kūdere",
       "jp": "クーデレ"
     },
-    "aliases": [],
-    "alternateSpellings": [{ "target": "default", "regex": "kuudere" }]
+    "aliases": {},
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "kuudere"
+      }
+    ]
   },
   {
     "id": "5HkwXlWG4b3MDGukUomeQ",
@@ -3551,6 +4306,7 @@
       "ro_jp": "Deredere",
       "jp": "デレデレ"
     },
-    "aliases": []
+    "aliases": {},
+    "alternateSpellings": []
   }
 ]
