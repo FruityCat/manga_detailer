@@ -9,6 +9,10 @@
 (Yakuza, Mafia) -> Gang [As True Alias]
 (Real Robot) -> Cyborg [??]
 (Urban/Contemporary Fantasy) -> Fantasy [As True Alias]
+(Dark Slapstick Crude Gag Comedy) -> Comedy [As True Alias]
+(Succubus Incubus) -> Demons [As True Alias]
+
+Add all alternate spellings for disability tag. Mark Blind, Paralysed, Deaf, and Amputee as true alias
 
 # To Do
 1. Split aliases into true alias and alternate spelling.

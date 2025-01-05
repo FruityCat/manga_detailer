@@ -52,7 +52,7 @@
     "translations": {
       "en": "Adult Couples"
     },
-    "aliases": ["Adult Couple"],
+    "aliases": [],
     "alternateSpellings": [
       { "target": "default", "regex": "adult[ -_]{0,1}couples{0,1}" }
     ]
@@ -77,7 +77,7 @@
       "en": "Afterlife"
     },
     "aliases": {},
-    "alternateSpellings": [{ "target": "default", "regex": "after[-_ ]life" }]
+    "alternateSpellings": [{ "target": "default", "regex": "after[-_ ]{0,1}lifes{0,1}" }]
   },
   {
     "id": "RUFd2D5n0xJsTd5xbXjZh",
@@ -180,7 +180,7 @@
     "alternateSpellings": [
       {
         "target": "alias",
-        "name": "Memory Loss",
+        "id": "Memory Loss",
         "regex": "memory[-_]{0,1}loss"
       }
     ]
@@ -208,17 +208,17 @@
       "ro_jp": "Kemonomimi"
     },
     "aliases": {
-      "tempidhoauchdyufhriestlarste129387": {
+      "tempid1": {
         "trueAlias": "false",
         "localisation": "en",
         "en": "Animal Characteristics"
       },
-      "tempidawyufthoaruestalnorufht": {
+      "tempid2": {
         "trueAlias": true,
         "localisation": "en",
         "en": "Furry"
       },
-      "tempidhoauchdyufhriesan29387": {
+      "tempid3": {
         "trueAlias": "true",
         "localisation": "default",
         "en": "Cat Girl",
@@ -228,12 +228,12 @@
     "alternateSpellings": [
       {
         "target": "alias",
-        "key": "tempidhoauchdyufhriestlarste129387",
+        "id": "tempid1",
         "regex": "animal(?:istic){0,1}[-_]{0,1}characteristics{0,1}"
       },
       {
         "target": "alias",
-        "key": "tempidhoauchdyufhriesan29387",
+        "id": "tempid3",
         "regex": "(?:cat[-_]{0,1}girls{0,1})|(?:neko[-_ ]{0,1}(?:mimi|girls{0,1}))"
       }
     ]
@@ -364,7 +364,7 @@
       "en": "Basketball"
     },
     "aliases": {},
-    "alternateSpellings": [{ "target": "default", "regex": "basket[-_ ]ball" }]
+    "alternateSpellings": [{ "target": "default", "regex": "basket[-_ ]{0,1}balls{0,1}" }]
   },
   {
     "id": "DL2ph4Ah1Cu3EzHw5Xwnk",
@@ -378,7 +378,7 @@
     },
     "aliases": {},
     "alternateSpellings": [
-      { "target": "default", "regex": "(?:bath[-_ ]house)|(?:sentou)" }
+      { "target": "default", "regex": "(?:bath[-_ ]{0,1}houses{0,1})|(?:sentou)" }
     ]
   },
   {
@@ -421,12 +421,12 @@
       { "target": "default", "regex": "coer[st]ion" },
       {
         "target": "alias",
-        "key": "Yg5FU4dHwtB5q3wtxlzVE",
+        "id": "Yg5FU4dHwtB5q3wtxlzVE",
         "regex": "black[-_ ]{0,1}mail"
       },
       {
         "target": "alias",
-        "key": "SNKhFz-AUrAzvj2kZOLUp",
+        "id": "SNKhFz-AUrAzvj2kZOLUp",
         "regex": "extorsion"
       }
     ]
@@ -485,7 +485,7 @@
     "alternateSpellings": [
       {
         "target": "default",
-        "regex": "body[-_ ]swap(?:[p]{0,1}ing|s|ed){0,1}"
+        "regex": "body[-_ ]{0,1}swap(?:[p]{0,1}ing|s|ed){0,1}"
       }
     ]
   },
@@ -707,7 +707,14 @@
     "translations": {
       "en": "College"
     },
-    "aliases": ["University"]
+    "aliases": ["University"],
+    "alternateSpellings": [
+      {
+        "target": "alias",
+        "id": "University",
+        "regex": "(?:uni)|(?:varsity)"
+      }
+    ]
   },
   {
     "id": "Pi5j8F0bpzXghnYE2tFQm",
@@ -727,7 +734,14 @@
     "translations": {
       "en": "Comedy"
     },
-    "aliases": []
+    "aliases": ["Dark Comedy", "Slapstick Comedy", "Gag Comedy", "Crude Comedy", "Dry Comedy"],
+    "alternateSpellings": [
+      {"target": "alias", "id": "Dark Comedy", "regex": "dark[-_ ]{0,1}(?:humor|comedy)"},
+      {"target": "alias", "id": "Slapstick Comedy", "regex": "slap[-_ ]{0,1}stick[-_ ]{0,1}(?:humor|comedy)"},
+      {"target": "alias", "id": "Gag Comedy", "regex": "gag[-_ ]{0,1}(?:humor|comedy)"},
+      {"target": "alias", "id": "Crude Comedy", "regex": "crude[-_ ]{0,1}(?:humor|comedy)"},
+      {"target": "alias", "id": "Dry Comedy", "regex": "dry[-_ ]{0,1}(?:humor|comedy)"}
+    ]
   },
   {
     "id": "HtEcXRklZSah910XQ3tPC",
@@ -737,7 +751,10 @@
     "translations": {
       "en": "Coming of Age"
     },
-    "aliases": ["Coming-of-age"]
+    "aliases": {},
+    "alternateSpellings": [
+      { "target": "default", "regex": "coming[-_ ]{0,1}of[-_ ]{0,1}age" }
+    ]
   },
   {
     "id": "BhtcEWu-nV-UlTU3EyD-m",
@@ -767,7 +784,15 @@
     "translations": {
       "en": "Cooking"
     },
-    "aliases": ["Food", "Cuisine", "Chef", "Cook"]
+    "aliases": ["Cuisine", "Chef"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "cook(?:ery){0,1}|bak(?:e|ing)" },
+      {
+        "target": "alias",
+        "id": "Cuisine",
+        "regex": "foods{0,1}|bak(?:ed|ing)[-_ ]{0,1}goods{0,1}"
+      }
+    ]
   },
   {
     "id": "KvUQ5-2QUTO94TwWVHokS",
@@ -807,14 +832,12 @@
     "translations": {
       "en": "Crossdressing"
     },
-    "aliases": [
-      "Crossdressers",
-      "Crossdress",
-      "Crossdresser",
-      "Cross Dressing",
-      "Cross Dresser",
-      "Cross Dressers",
-      "Cross Dress"
+    "aliases": [],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "cross[-_ ]{0,1}dress(?:ers{0,1}|ing){0,1}"
+      }
     ]
   },
   {
@@ -825,7 +848,10 @@
     "translations": {
       "en": "Crossover"
     },
-    "aliases": ["Cross-over", "Cross Over"]
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "cross[-_ ]{0,1}over(?:ers{0,1}){0,1}" }
+    ]
   },
   {
     "id": "6FMnhI8MPNT85sdfMyfCR",
@@ -865,42 +891,18 @@
     "translations": {
       "en": "Dancing"
     },
-    "aliases": [
-      "Dance",
-      "Dancer",
-      "Dancers",
-      "Ballet",
-      "Ballet Dancing",
-      "Ballet Dancer",
-      "Ballet Dancers",
-      "Ballroom",
-      "Ballroom Dancing",
-      "Ballroom Dancer",
-      "Ballroom Dancers",
-      "Tap Dancing",
-      "Tap Dancer",
-      "Tap Dancers"
+    "aliases": ["Ballet"],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "(?:ball[-_ ]{0,1}room[-_ ]{0,1}|tap[-_ ]{0,1}){0,1}danc(?:e(?:rs{0,1}){0,1}|ing){0,1}|ball[-_ ]{0,1}room"
+      },
+      {
+        "target": "alias",
+        "id": "Ballet",
+        "regex": "(?:ballet )Danc(e(?:rs{0,1}){0,1}|ing)"
+      }
     ]
-  },
-  {
-    "id": "mh06Oe5_wcYmFPEP2tGJG",
-    "type": "genre",
-    "description": "Dark comedy manga make humorous and comedic light of situations that people would normally find sad, frightening or mentally disturbing. Also known as Black Comedy or Dark Humor.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Dark Comedy"
-    },
-    "aliases": []
-  },
-  {
-    "id": "7C2z2xRgeWwOnBQjZJV6g",
-    "type": "genre",
-    "description": "Dark fantasy is a subgenre of Fantasy that incorporates grittier and more mature themes. These manga often contain elements of Horror, Graphic Sex, or Explicit Violence.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Dark Fantasy"
-    },
-    "aliases": []
   },
   {
     "id": "2gortxFzHaaInuDHmcIOD",
@@ -910,7 +912,13 @@
     "translations": {
       "en": "Deal with the Devil"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "deal[-_ ]{0,1}with[-_ ]{0,1}(?:the[-_ ]{0,1}){0,1}devil"
+      }
+    ]
   },
   {
     "id": "LUOwaKmRx4p5mcVKYim7-",
@@ -920,7 +928,8 @@
     "translations": {
       "en": "Delinquents"
     },
-    "aliases": ["Delinquent"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "delinquent" }]
   },
   {
     "id": "Ze8hxM9TiqMRochTuqWjI",
@@ -938,9 +947,15 @@
     "description": "Demons are non-human entities generally believed to be dark or evil in nature. If demons are a core aspect of the work, their actions - often harmful to humans - will generally be the focus. Characters may engage in fighting demons physically; may attempt exorcisms or other rituals or spells to deal with them; or may be the demons or their servants or allies, carrying out their own agendas.",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Demons"
+      "en": "Demons",
+      "ro_jp": "Oni"
     },
-    "aliases": ["Demon"]
+    "aliases": ["Succubus", "Incubus"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "demon" },
+      { "target": "alias", "id": "Succubus", "regex": "succub(?:i|uses)" },
+      { "target": "alias", "id": "Incubus", "regex": "incub(?:i|uses)" }
+    ]
   },
   {
     "id": "yld6jB95Re2wOPuS012jT",
@@ -948,19 +963,59 @@
     "description": "Detectives are people who investigate crimes. These manga feature characters who work the streets, analyze evidence from crime scenes, or research past records, using logic and reasoning to discover who did what, and how. Detectives may be members of a police force, employed by some other organization, or private citizens with a desire to learn the truth.",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Detective"
+      "en": "Detectives"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "detective" }]
   },
   {
     "id": "B2hcAytgHT6b5lL-biijT",
     "type": "theme",
     "description": "These manga feature main characters with disabilities. They may be deaf, blind, mute, unable to walk, or have other debilitating conditions that impact their life. Some are disabled from birth, while others acquire their disability due to an Illness or injury.",
     "defaultLocalisation": "en",
-    "translations": {
-      "en": "Disability"
+    "aliases": {
+      "HGYUZGfb_toywWHyDjXGL": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Blind"
+      },
+      "3RFC3WMMu6sciP-O70D4S": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Paraplegia"
+      },
+      "Uxt0U1_PTqzfIkrHh0XQI": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Quadriplegia"
+      },
+      "V8GtP2nwVqsXh9anAVJ61": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Paralysed"
+      },
+      "Mny5xupYxMP-DniuTegzu": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Mute"
+      },
+      "8HV93IH-kUnhSp9S-V9K8": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Deaf"
+      },
+      "YOz10Vw-aSUZ3ee7IJOY6": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Amputee"
+      }
     },
-    "aliases": []
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "disabled|cripled{0,1}"
+      }
+    ]
   },
   {
     "id": "PytSnMLCXGksQ_Tdr3i7S",
@@ -970,7 +1025,13 @@
     "translations": {
       "en": "Dragons"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "(?:(?:fire|water|earth|air|lightning)[-_ ]{0,1}){0,1}dragon|wyverns{0,1}"
+      }
+    ]
   },
   {
     "id": "psX8s5O0qGuool03DxSjx",
@@ -1020,7 +1081,8 @@
     "translations": {
       "en": "Dystopian"
     },
-    "aliases": ["Dystopia"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "dystopia" }]
   },
   {
     "id": "I_4sof6C2BbcWAk_XjrPh",
@@ -1100,7 +1162,34 @@
     "translations": {
       "en": "Fantasy"
     },
-    "aliases": ["Contemporary Fantasy", "Urban Fantasy", "High Fantasy"]
+    "aliases": [
+      "Contemporary Fantasy",
+      "Urban Fantasy",
+      "High Fantasy",
+      "Dark Fantasy"
+    ],
+    "alternateSpellings": [
+      {
+        "target": "alias",
+        "id": "Contemporary Fantasy",
+        "regex": "contemporary[-_ ]{0,1}fantasy"
+      },
+      {
+        "target": "alias",
+        "id": "Urban Fantasy",
+        "regex": "urban[-_ ]{0,1}fantasy"
+      },
+      {
+        "target": "alias",
+        "id": "High Fantasy",
+        "regex": "high[-_ ]{0,1}fantasy"
+      },
+      {
+        "target": "alias",
+        "id": "Dark Fantasy",
+        "regex": "dark[-_ ]{0,1}fantasy"
+      }
+    ]
   },
   {
     "id": "HkvVauCRP1BBRfgJrbTTk",
@@ -1130,7 +1219,8 @@
     "translations": {
       "en": "Football"
     },
-    "aliases": ["Soccer"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "soccer" }]
   },
   {
     "id": "SjxSQViqJHk8REwUJxRJO",
@@ -1138,25 +1228,22 @@
     "description": "These manga are fully drawn in color, unlike normal manga which occasionally have a few colored pages, followed by all black and white artwork. Korean and Chinese webcomics, and Film Comics, frequently have Full Color artwork.",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Full Color"
+      "en": "Full Colour"
     },
-    "aliases": [
-      "Full Colour",
-      "Fan Coloured",
-      "Fan Colored",
-      "Official Coloured",
-      "Official Colored"
+    "aliases": ["Fan Coloured", "Official Coloured"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "(?:fully{0,1}[-_ ]{0,1}){0,1}color" },
+      {
+        "target": "alias",
+        "id": "Fan Coloured",
+        "regex": "fan[-_ ]{0,1}colou{0,1}r(?:ed){0,1}"
+      },
+      {
+        "target": "alias",
+        "id": "Official Coloured",
+        "regex": "official[-_ ]{0,1}colou{0,1}r(?:ed){0,1}"
+      }
     ]
-  },
-  {
-    "id": "8rtgTAbIRrSLvpg2Op9Py",
-    "type": "theme",
-    "description": "Gag comedies are usually episodic, focusing on a specific pun, joke, situation, or character, for a series of episodes for anime, or one or more chapters for manga. The breakdown is similar to a single sketch in a stand-up comedy show. 4-koma manga typically use a single strip for a single joke.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Gag Comedy"
-    },
-    "aliases": []
   },
   {
     "id": "EZ-L9oIhIeUVuNnVm7wNv",
@@ -1166,7 +1253,10 @@
     "translations": {
       "en": "Gambling"
     },
-    "aliases": ["Gamble", "Poker", "Blackjack"]
+    "aliases": ["Poker", "Blackjack"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "gamble(?:rs{0,1}){0,1}" }
+    ]
   },
   {
     "id": "Sw2jCC2fv58G3RtgBUg-B",
@@ -1184,9 +1274,32 @@
     "description": "In these manga, a group of individuals have joined forces to commit crimes or cause mayhem. They might be Delinquents in a school gang, members of the Bosozoku (biker gangs), or hardened criminals in a crime syndicate like the Mafia or Yakuza.",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Gang"
+      "en": "Gangs"
     },
-    "aliases": ["Gangs", "Biker Gang", "Cartel"]
+    "aliases": ["Biker Gangs", "Cartel", "Yakuza", "Mafia"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "gang" },
+      {
+        "target": "alias",
+        "id": "Cartel",
+        "regex": "(?:(?:mexican|south[-_ ]{0,1}american){0,1}drug){0,1}[-_ ]{0,1}cartels{0,1}"
+      },
+      {
+        "target": "alias",
+        "id": "Yakuza",
+        "regex": "japanese[-_ ]{0,1}(?:mafia|gangs{0,1})"
+      },
+      {
+        "target": "alias",
+        "id": "Mafia",
+        "regex": "italian[-_ ]{0,1}(?:mafia|gangs{0,1})"
+      },
+      {
+        "target": "alias",
+        "id": "Biker Gangs",
+        "regex": "(?:biker|motor[-_ ]{0,1}(?:cycle|bike))[-_ ]{0,1}(?:gangs{0,1})"
+      }
+    ]
   },
   {
     "id": "YIqFDJLpT3zQVSgIpEyIQ",
@@ -1197,16 +1310,42 @@
       "en": "Gender Bender"
     },
     "aliases": [
-      "Gender Bending",
-      "Genderbender",
-      "Genderbending",
-      "Gender Bend",
-      "Genderbend",
-      "Trans",
       "Transgender",
-      "Trans-gender",
-      "Gender Swap",
-      "Genderswap"
+      "Trans-woman",
+      "Trans-man",
+      "Non-binary",
+      "Gender Fluid"
+    ],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "gender[-_ ]{0,1}(?:swap|bend)(?:ers{0,1}|ing|ed|s){0,1}"
+      },
+      {
+        "target": "alias",
+        "id": "Transgender",
+        "regex": "tran(?:n{0,1}y|s(?:[-_ ]{0,1}genders{0,1}){0,1}){0,1}"
+      },
+      {
+        "target": "alias",
+        "id": "Trans-woman",
+        "regex": "trans(?:[-_ ]{0,1}(?:wom[ae]n|fem(?:me|inine)))"
+      },
+      {
+        "target": "alias",
+        "id": "Trans-man",
+        "regex": "trans(?:[-_ ]{0,1}(?:m[ae]n|masc(?:uline){0,1}))"
+      },
+      {
+        "target": "alias",
+        "id": "Non-binary",
+        "regex": "non[-_ ]{0,1}binary|nb|enby"
+      },
+      {
+        "target": "alias",
+        "id": "Gender Fluid",
+        "regex": "gender[-_ ]{0,1}fluid"
+      }
     ]
   },
   {
@@ -1217,7 +1356,10 @@
     "translations": {
       "en": "Gender Identity"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "gender(?:[-_]{0,1}identity){0,1}" }
+    ]
   },
   {
     "id": "hY2y3n8YySuiXAFINYcmF",
@@ -1235,7 +1377,8 @@
     "description": "These manga feature deities - gods or goddesses - as main characters. The gods may be based on a form of mythology such as Greek or Norse, or they may be fictional deities. Manga with gods may focus on a God-Human Relationship.",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Gods"
+      "en": "Gods",
+      "ro_jp": "Kami"
     },
     "aliases": []
   },
@@ -1317,7 +1460,15 @@
     "translations": {
       "en": "Human Pet"
     },
-    "aliases": ["Pet Play"]
+    "aliases": ["Pet Play"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "human[-_]pets{0,1}" },
+      {
+        "target": "alias",
+        "id": "Pet Play",
+        "regex": "pet[-_]play(?:ing|ers{0,1}){0,1}"
+      }
+    ]
   },
   {
     "id": "Aee4AUoCIPy0rPIBVQsys",
@@ -1350,16 +1501,6 @@
     "aliases": []
   },
   {
-    "id": "Pu2bXuldEDoYI4v6tFjo5",
-    "type": "theme",
-    "description": "These manga feature an incubus: a Demon or spirit in male form that engages in sexual intercourse to feed off the energy of its partner. In traditional folklore, incubi would visit women in their sleep, but modern renditions of these creatures can have them pursuing people of either sex, whether they are asleep or awake.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Incubus"
-    },
-    "aliases": []
-  },
-  {
     "id": "AfPgKvwegC5cejikesaLM",
     "type": "theme",
     "description": "In these manga, infidelity is an important aspect of the story. Characters may be dealing with an unfaithful partner, or having an affair with someone else. Their actions may result in a Divorce or unplanned Pregnancy.",
@@ -1375,9 +1516,12 @@
     "description": "Insects are the primary component of these manga, whether they're giant, man-eating monsters or household pests of another variety.",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Insect"
+      "en": "Insects"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "insect|bugs{0,1}|creepy[-_ ]{0,1}crawlies" }
+    ]
   },
   {
     "id": "No8wc-ACd3otwOc6HFQeW",
@@ -1387,7 +1531,18 @@
     "translations": {
       "en": "Interspecies Relationship"
     },
-    "aliases": ["Beastiality"]
+    "aliases": ["Beastiality"],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "inter[-_ ]{0,1}species[-_ ]{0,1}relationships{0,1}"
+      },
+      {
+        "target": "alias",
+        "id": "Beastiality",
+        "regex": "inter[-_ ]{0,1}species[-_ ]{0,1}sex{0,1}"
+      }
+    ]
   },
   {
     "id": "MdCG9wlminLBwLjHYtGis",
@@ -1399,7 +1554,23 @@
       "ro_jp": "Isekai",
       "jp": "異世界"
     },
-    "aliases": ["Parallel Universe", "Different-dimension World"]
+    "aliases": ["Parallel Universe", "Different-dimension World"],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "(?:transported[-_ ]{0,1}to[-_ ]{0,1}){0,1}another[-_]{0,1}(?:world|universe)"
+      },
+      {
+        "target": "alias",
+        "id": "Parallel Universe",
+        "regex": "parallel[-_]{0,1}universe"
+      },
+      {
+        "target": "alias",
+        "id": "Different-dimension World",
+        "regex": "different[-_ ]{0,1}dimension[-_ ]{0,1}world"
+      }
+    ]
   },
   {
     "id": "K4_FIRWDLiiLX-ivWSKpg",
@@ -1429,7 +1600,14 @@
     "translations": {
       "en": "Band"
     },
-    "aliases": []
+    "aliases": ["School Band"],
+    "alternateSpellings": [
+      {
+        "target": "alias",
+        "id": "School Band",
+        "regex": "school[-_]bands{0,1}"
+      }
+    ]
   },
   {
     "id": "31ttHBqCM5ww9r7RFpjcg",
@@ -1472,18 +1650,6 @@
     "aliases": []
   },
   {
-    "id": "G7EY9V6UYtvxTPRagFLvU",
-    "type": "theme",
-    "description": "These manga feature the Mafia: traditionally Italian Gangs that follow a strict code of honor called Omert\\u00e0.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Mafia",
-      "ro_jp": "Yakuza",
-      "jp": "ヤクザ"
-    },
-    "aliases": ["Japanese Mafia"]
-  },
-  {
     "id": "5o4_jE-3yUDhM-KZV-lDu",
     "type": "theme",
     "description": "Magic is the use of gestures, incantations, or rituals to harness some kind of supernatural power. Characters in Magic manga tend to go by titles such as witch, wizard, mage, or sorcerer, and may be occupied with learning to harness these abilities or with finding magical relics or battling against strange entities... or other magic users.",
@@ -1500,10 +1666,16 @@
     "defaultLocalisation": "en",
     "translations": {
       "en": "Magical Girl",
-      "ro_jp": "Mahou Shoujo",
+      "ro_jp": "Mahō Shōjo",
       "jp": "魔法少女"
     },
-    "aliases": ["Magical Girls"]
+    "aliases": [],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "magical[-_ ]{0,1}girls{0,1}|mah(?:ō|ou)[-_ ]{0,1}sh(?:ō|ou)jo"
+      }
+    ]
   },
   {
     "id": "h0w2txiFOa2xYCoxI7HwH",
@@ -1523,7 +1695,10 @@
     "translations": {
       "en": "Maids"
     },
-    "aliases": ["Maid"]
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "(?:french[-_ ]{0,1}){0,1}maids{0,1}" }
+    ]
   },
   {
     "id": "MHoU-c5EakWQfRgGa2RtY",
@@ -1953,7 +2128,8 @@
     "translations": {
       "en": "Political"
     },
-    "aliases": ["Politics"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "politics{0,1}" }]
   },
   {
     "id": "M45m8rLydeDY9ZjbkLoMc",
@@ -1983,7 +2159,10 @@
     "translations": {
       "en": "Post-apocalyptic"
     },
-    "aliases": ["Post-apocalypse"]
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "post[-_ ]{0,1}apocalyp(?:se|tic)" }
+    ]
   },
   {
     "id": "PH3CH3YrMn2oKHF_NyjHt",
@@ -2243,7 +2422,13 @@
     "translations": {
       "en": "Sci-Fi"
     },
-    "aliases": ["Sci Fi", "SciFi"]
+    "aliases": [],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "sci(?:ence){0,1}[-_ ]{0,1}fi(?:ction){0,1}"
+      }
+    ]
   },
   {
     "id": "ir-Zo6mBH5MXuBy2qzrO-",
@@ -2326,25 +2511,22 @@
     "aliases": []
   },
   {
-    "id": "hWGE1omHO9qUXOWQT5w0x",
-    "type": "theme",
-    "description": "These manga feature humor based on physical comedy. Characters might be comedically clumsy, or hit each other in comical, over the top ways.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Slapstick"
-    },
-    "aliases": []
-  },
-  {
     "id": "jO4iD1sENyxIVjDkWo1L5",
     "type": "genre",
     "description": "Slice of life, or \"nichijou\" in Japanese, refers to events that occur on a daily basis such as getting ready for the day, light chores, enjoying a hobby, or preparing meals. These events differ depending on setting, but above all else are considered to be ordinary, everyday actions that don't always follow a central plot. The related tags School Life and Work Life focus on ordinary events that take place in a school or work setting, respectively.",
     "defaultLocalisation": "en",
     "translations": {
       "en": "Slice of Life",
-      "ro_jp": "Nichijou"
+      "ro_jp": "Nichijō",
+      "jp": "日常"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "slice[-_ ]{0,1}of[-_ ]{0,1}life|nichijou"
+      }
+    ]
   },
   {
     "id": "K7Ru-SX1YIwV9DpJA6lFc",
@@ -2457,16 +2639,6 @@
     "aliases": []
   },
   {
-    "id": "iTJsF5JcvD92Zx4uvR-gV",
-    "type": "theme",
-    "description": "These manga feature succubi: Demons or spirits in female form that engage in sexual intercourse to feed off the energy of their partners. In traditional folklore, a succubus would visit men in their sleep, but modern renditions of these creatures can have them pursuing people of either sex, whether they are asleep or awake.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Succubus"
-    },
-    "aliases": ["Succubi", "Succubuses"]
-  },
-  {
     "id": "aBtc4A_ZVtDhIDr1a1ddo",
     "type": "theme",
     "description": "These manga feature characters with extraordinary and often superhuman Superpowers. With these abilities, they fight evil to protect society and uphold their moral code. Superheroes are frequently Masked Heroes who wear costumes to hide their identities.",
@@ -2474,12 +2646,9 @@
     "translations": {
       "en": "Superhero"
     },
-    "aliases": [
-      "Superheroes",
-      "Super Heroes",
-      "Super Heros",
-      "Superheros",
-      "Super Hero"
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "super[-_ ]{0,1}hero(?:es){0,1}" }
     ]
   },
   {
@@ -2500,7 +2669,8 @@
     "translations": {
       "en": "Superpowers"
     },
-    "aliases": ["Superpower"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "superpowers{0,1}" }]
   },
   {
     "id": "sUNZ28ajraHELr6RCFF8u",
@@ -2520,7 +2690,14 @@
     "translations": {
       "en": "Swimming"
     },
-    "aliases": ["Swim Club"]
+    "aliases": ["Swim Club"],
+    "alternateSpellings": [
+      {
+        "target": "alias",
+        "id": "Swim Club",
+        "regex": "(?:school[-_ ]{0,1}){0,1}swim[-_ ]{0,1}clubs{0,1}"
+      }
+    ]
   },
   {
     "id": "LuXYw39RmI6f4ed207bDt",
@@ -2532,7 +2709,10 @@
       "ro_jp": "Sensei",
       "jp": "先生"
     },
-    "aliases": ["Teachers"]
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "teach(?:ers|ing){0,1}" }
+    ]
   },
   {
     "id": "sSpSBpPpwZiGwzVb7HOH6",
@@ -2602,7 +2782,10 @@
     "translations": {
       "en": "Vampires"
     },
-    "aliases": ["Vampire"]
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "vampire(?:ss){0,1}" }
+    ]
   },
   {
     "id": "fdoBsO4iTjJFXkcCTt-cY",
@@ -2632,7 +2815,13 @@
     "translations": {
       "en": "Virtual Reality"
     },
-    "aliases": ["Virtual World"]
+    "aliases": [],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "virtual[-_ ]{0,1}(?:worlds{0,1}|reality)"
+      }
+    ]
   },
   {
     "id": "V34W7AfDdEadDob39PYt-",
@@ -2682,7 +2871,10 @@
     "translations": {
       "en": "Witchcraft"
     },
-    "aliases": ["Witch", "Witches", "Witchery", "Hag"]
+    "aliases": ["Witch", "Witches", "Witchery", "Hag"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "witch(?:es|ery){0,1}|hag" }
+    ]
   },
   {
     "id": "g_PKUIVvAQUzRzLszyRvj",
@@ -2820,19 +3012,21 @@
       "ro_jp": "Tiinzurabu",
       "jp": "ティーンズラブ"
     },
-    "aliases": ["TL"]
+    "aliases": ["TL"],
+    "alternateSpellings": [{ "target": "default", "regex": "TL" }]
   },
   {
     "id": "ehO7o79-GJKhZx_iCVZ7f",
     "type": "demographic",
-    "description": "Shounen (), translated as \"young boy\", is a demographic aimed at boys and young men, from elementary school age to around the age of 15. Shounen is the counterpart of Shoujo, a demographic aimed at teenage girls.",
+    "description": "Shounen (少年), translated as \"young boy\", is a demographic aimed at boys and young men, from elementary school age to around the age of 15. Shounen is the counterpart of Shoujo, a demographic aimed at teenage girls.",
     "defaultLocalisation": "ro_jp",
     "translations": {
       "en": "Young Boy",
-      "ro_jp": "Shounen",
+      "ro_jp": "Shōnen",
       "jp": "少年"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "shounen" }]
   },
   {
     "id": "YAp6-2WlUhWs2qOk4YCcl",
@@ -2842,7 +3036,10 @@
     "translations": {
       "en": "Oneshot"
     },
-    "aliases": ["One Shot", "One-shot"]
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "one[-_ ]{0,1}shot" }
+    ]
   },
   {
     "id": "R4oCWtQMv7X5ggtu8qf7_",
@@ -2866,9 +3063,10 @@
     "description": "",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Kaijuu"
+      "en": "Kaijū"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "kaijuu" }]
   },
   {
     "id": "1PgQusqMO0UHB__iGaafo",
@@ -2891,7 +3089,14 @@
       "ro_jp": "Guro",
       "jp": " グロ"
     },
-    "aliases": ["Ero-guro", "Erotic Gore"]
+    "aliases": ["Ero-guro"],
+    "alternateSpellings": [
+      {
+        "target": "alias",
+        "id": "Ero-guro",
+        "regex": "ero(?:tic){0,1}[-_]{0,1}gore|ero[_ ]{0,1}guro"
+      }
+    ]
   },
   {
     "id": "0XVvwSXdw-hX-1iczMe3c",
@@ -2907,7 +3112,18 @@
       "zh-ch": "百合",
       "ro_zh-cn": "Baihe"
     },
-    "aliases": ["GL", "Shoujo-ai", "少女愛", "Lesbian", "Sapphic"]
+    "aliases": ["Shōjo Ai", "Lesbian", "Sapphic"],
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "gl|girls{0,1}'{0,1}[-_ ]{0,1}love|sapphic"
+      },
+      {
+        "target": "alias",
+        "id": "Shōjo Ai",
+        "regex": "sh(?:ou|ō)jo[-_ ]{0,1}ai"
+      }
+    ]
   },
   {
     "id": "_o6jAaqBC20L2y8Y8ubDS",
@@ -2923,7 +3139,15 @@
       "zh-ch": "耽美",
       "ro_zh-cn": "Danmei"
     },
-    "aliases": ["BL", "Bara", "Shounen-ai", "少年愛"]
+    "aliases": ["Bara", "Shōnen Ai", "少年愛"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "bl|boys{0,1}'{0,1}[-_ ]{0,1}love|bara" },
+      {
+        "target": "alias",
+        "id": "Shōnen Ai",
+        "regex": "sh(?:ou|ō)nen[-_ ]{0,1}ai"
+      }
+    ]
   },
   {
     "id": "SrRiUR_ZULYaNC5-qxa4M",
@@ -2951,7 +3175,7 @@
   {
     "id": "241wA0CeLkg5rioK0pbub",
     "type": "theme",
-    "description": "These manga feature Fujoshi (). Translated as \"rotten girl\", the term describes women who are obsessed with men in homosexual relationships. Their preferred fiction is anything to do with Yaoi or Boys' Love (BL).",
+    "description": "These manga feature Fujoshi (腐女子). Translated as \"rotten girl\", the term describes women who are obsessed with men in homosexual relationships. Their preferred fiction is anything to do with Yaoi or Boys' Love (BL).",
     "defaultLocalisation": "ro_jp",
     "translations": {
       "en": "Rotten Girl",
@@ -2982,7 +3206,8 @@
       "ro_jp": "Ecchi",
       "jp": "エッチ"
     },
-    "aliases": ["エイチ", "Ｈ", "ｈ"]
+    "aliases": ["エイチ", "Ｈ", "ｈ"],
+    "alternateSpellings": [{ "target": "default", "regex": "エイチ|Ｈ|ｈ" }]
   },
   {
     "id": "QHBdGb1P8n7gs-5YYHsw3",
@@ -2991,10 +3216,18 @@
     "defaultLocalisation": "ro_jp",
     "translations": {
       "en": "Independent Comic",
-      "ro_jp": "Doujinshi",
+      "ro_jp": "Dōjinshi",
       "jp": "同人誌"
     },
-    "aliases": ["Doujin", "Zine", "同人", "Fanzine"]
+    "aliases": ["Zine", "", "Fanzine"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "independent[-_ ]{0,1}comics{0,1}|同人" },
+      {
+        "target": "alias",
+        "id": "Dōjinshi",
+        "regex": "d(?:ō|ou)jin(?:shi){0,1}"
+      }
+    ]
   },
   {
     "id": "cuChpC3yJrFYDDmM7U3vf",
@@ -3027,7 +3260,8 @@
       "ro_zh-cn": "Xianxia",
       "zh-cn": "仙侠"
     },
-    "aliases": ["仙俠"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "仙俠" }]
   },
   {
     "id": "4s4E2D2RqQbrb6oKfbPlj",
@@ -3150,7 +3384,8 @@
     "translations": {
       "en": "Philosophical"
     },
-    "aliases": ["Philosophy"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "philosophy" }]
   },
   {
     "id": "KMrJRGscw5qLwlcDIzI8U",
@@ -3160,7 +3395,8 @@
     "translations": {
       "en": "Sports"
     },
-    "aliases": ["Sport"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "sport" }]
   },
   {
     "id": "F58_N1W8QowPOqK5pPkFN",
@@ -3180,7 +3416,8 @@
     "translations": {
       "en": "Animals"
     },
-    "aliases": ["Animal"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "animal" }]
   },
   {
     "id": "Swc0tvW_1QqODX33PLxHO",
@@ -3190,7 +3427,8 @@
     "translations": {
       "en": "Ghosts"
     },
-    "aliases": ["Ghost"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "ghost" }]
   },
   {
     "id": "_6EJhFrI5OrvndoyvCi8d",
@@ -3210,7 +3448,8 @@
     "translations": {
       "en": "Loli"
     },
-    "aliases": ["Lolicon"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "lolicon" }]
   },
   {
     "id": "JsPSXbzV1GUb-sEqZZHqe",
@@ -3220,7 +3459,8 @@
     "translations": {
       "en": "Shota"
     },
-    "aliases": ["Shotacon"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "shotacon" }]
   },
   {
     "id": "U4HgyNSTbegpBIQRaETqC",
@@ -3240,7 +3480,10 @@
     "translations": {
       "en": "Video Games"
     },
-    "aliases": ["Video Game"]
+    "aliases": ["Video Game"],
+    "alternateSpellings": [
+      { "target": "default", "regex": "video[-_ ]{0,1}games{0,1}" }
+    ]
   },
   {
     "id": "g7SldGGnv8T2baOgbV7tx",
@@ -3250,7 +3493,8 @@
     "translations": {
       "en": "Bullying"
     },
-    "aliases": ["Bully"]
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "bully" }]
   },
   {
     "id": "kt0slZSQqsB1ddqCkWQKH",
@@ -3270,7 +3514,10 @@
     "translations": {
       "en": "Office Workers"
     },
-    "aliases": ["Office Worker"]
+    "aliases": [],
+    "alternateSpellings": [
+      { "target": "default", "regex": "office[-_ ]{0,1}workers{0,1}" }
+    ]
   },
   {
     "id": "Aqfs4DtaDQFei0vx9d9yl",
@@ -3289,10 +3536,11 @@
     "description": "",
     "defaultLocalisation": "ro_jp",
     "translations": {
-      "ro_jp": "Kuudere",
+      "ro_jp": "Kūdere",
       "jp": "クーデレ"
     },
-    "aliases": []
+    "aliases": [],
+    "alternateSpellings": [{ "target": "default", "regex": "kuudere" }]
   },
   {
     "id": "5HkwXlWG4b3MDGukUomeQ",
