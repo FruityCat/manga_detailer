@@ -6,11 +6,8 @@
 5. Alternate spellings will point to their alias before pointing to a default location. Always. This is to account for errors where an alternate spelling can skip a true alias. (EG: "Japanese Mafia" -> (skips) Yakuza -> Gangs).
 
 # Changes to Make
-(Yakuza, Mafia) -> Gang [As True Alias]
 (Real Robot) -> Cyborg [??]
-(Urban/Contemporary Fantasy) -> Fantasy [As True Alias]
-(Dark Slapstick Crude Gag Comedy) -> Comedy [As True Alias]
-(Succubus Incubus) -> Demons [As True Alias]
+(Shinigami) -> Gods [As True Alias]
 
 Add all alternate spellings for disability tag. Mark Blind, Paralysed, Deaf, and Amputee as true alias
 
@@ -23,6 +20,3 @@ Add all alternate spellings for disability tag. Mark Blind, Paralysed, Deaf, and
 
 # Questions
 1. How do we handle conflicts in synonyms?? EG: Superpower and Super Power
-
-
-test string vs regex comparison

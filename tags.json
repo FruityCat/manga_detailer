@@ -403,22 +403,6 @@
     ]
   },
   {
-    "id": "Z0RmnbuHQJHb3YXADgIJ4",
-    "type": "theme",
-    "description": "Basketball is the focus of these manga. Training and competing in tournaments or championships are common themes in sports titles, as well as team spirit, or being an underdog who goes against the odds to succeed.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Basketball"
-    },
-    "aliases": {},
-    "alternateSpellings": [
-      {
-        "target": "default",
-        "regex": "basket[-_ ]{0,1}balls{0,1}"
-      }
-    ]
-  },
-  {
     "id": "DL2ph4Ah1Cu3EzHw5Xwnk",
     "type": "theme",
     "description": "These manga focus on or primarily take place in a bathhouse. Public bathhouses are known as sento (銭湯) in Japan. Bathing facilities are usually divided by gender and have separate showers to wash before soaking in the communal bath.",
@@ -833,30 +817,40 @@
       "en": "Comedy"
     },
     "aliases": {
+      "Ct9JE7Z_W0-YcnaAaXHHz": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Surreal Comedy"
+      },
       "6PdkaRGqXRUmcmf4eWCcC": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Dark Comedy"
       },
       "mKOCSws_Rmt76fimu4P29": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Slapstick Comedy"
       },
       "YDMROeIHCwYsR_5PhNhKo": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Gag Comedy"
       },
       "MnYboWPtPX0nV-lp7G7Vc": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Crude Comedy"
       },
       "OHGBlig23pLhRBEWy8Yh2": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Dry Comedy"
+      },
+      "tsTFbi6ZZ-0gbIZNOeSwC": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Romantic Comedy"
       }
     },
     "alternateSpellings": [
@@ -884,6 +878,16 @@
         "target": "alias",
         "id": "OHGBlig23pLhRBEWy8Yh2",
         "regex": "dry[-_ ]{0,1}(?:humor|comedy)"
+      },
+      {
+        "target": "alias",
+        "id": "tsTFbi6ZZ-0gbIZNOeSwC",
+        "regex": "rom(?:antic){0,1}[-_ ]{0,1}com(?:edy){0,1}"
+      },
+      {
+        "target": "alias",
+        "id": "Ct9JE7Z_W0-YcnaAaXHHz",
+        "regex": "surreal[-_ ]{0,1}(?:humor|comedy)"
       }
     ]
   },
@@ -1136,12 +1140,12 @@
     },
     "aliases": {
       "cU9PP6ZRhn2b_m2EwrAEZ": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Succubus"
       },
       "K_4Y3qjzgJzsUlerJTtW1": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Incubus"
       }
@@ -1391,22 +1395,22 @@
     },
     "aliases": {
       "X8uHmKb2OdjGoBjfZuax8": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Contemporary Fantasy"
       },
       "xnr500dT-1svA8J5O1xOR": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Urban Fantasy"
       },
       "FlBPr5IhNJ-5Qe6vEFnn9": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "High Fantasy"
       },
       "rZ99_U3rGG8duyQCKiXm-": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Dark Fantasy"
       }
@@ -1556,6 +1560,11 @@
       "en": "Gangs"
     },
     "aliases": {
+      "cVBPHlfqK448C0nfy-lI8": {
+        "trueAlias": "true",
+        "localisation": "en",
+        "en": "Triads"
+      },
       "VmtM1yoYlIb7yL78tBaX8": {
         "trueAlias": false,
         "localisation": "en",
@@ -1567,12 +1576,14 @@
         "en": "Cartel"
       },
       "8qW02GELImGk9MKez0Ry2": {
-        "trueAlias": false,
-        "localisation": "en",
-        "en": "Yakuza"
+        "trueAlias": true,
+        "localisation": "ro_jp",
+        "en": "Japanese Mafia",
+        "ro_jp": "Yakuza",
+        "jp": "ヤクザ"
       },
       "wLaI79IoTKHoZmjr7X-L1": {
-        "trueAlias": false,
+        "trueAlias": true,
         "localisation": "en",
         "en": "Mafia"
       }
@@ -2143,8 +2154,20 @@
     "translations": {
       "en": "Mecha"
     },
-    "aliases": {},
-    "alternateSpellings": []
+    "aliases": {
+      "KPlgsONMttFEUcUJl30JU": {
+        "trueAlias": "false",
+        "localisation": "en",
+        "en": "Super Robot"
+      }
+    },
+    "alternateSpellings": [
+      {
+        "target": "alias",
+        "id": "KPlgsONMttFEUcUJl30JU",
+        "regex": "super[-_ ]{0,1}robots{0,1}"
+      }
+    ]
   },
   {
     "id": "LuClLE6KRXMZUYzWt9XE7",
@@ -2818,17 +2841,6 @@
     "alternateSpellings": []
   },
   {
-    "id": "h4_J1KebqK0wUG6qL2azN",
-    "type": "theme",
-    "description": "Romantic comedies, also known as romcoms, are a type of comedy manga focused on relationships. Typically, they feature characters who meet and ultimately fall in love, but can sometimes focus on already-coupled characters whose relationships grow throughout the story. The progression of their relationship is usually what provides the comedy aspect; for example, through the obstacles the couple faces such as a love triangle, or through mismatched personalities, misunderstandings, or other common tropes.",
-    "defaultLocalisation": "en",
-    "translations": {
-      "en": "Romantic Comedy"
-    },
-    "aliases": {},
-    "alternateSpellings": []
-  },
-  {
     "id": "sN323nJLeqLpcuUp_6yfV",
     "type": "theme",
     "description": "This manga features roommates: unrelated people who live together in a house, a dormitory room, or in an apartment unit. Sometimes referred to as housemates or flatmates. These people might share rent or expenses, or they might be roommates for fantastical reasons, such as an alien or creature that decides to live with a human.",
@@ -3402,7 +3414,7 @@
     "description": "These manga feature witches: magic users who often possess classic traits such as pointy hats, flying brooms, and black cat familiars. Some are protagonists looking to improve their craft, have adventures, or save the world; others might be tricksters or outright villains who cause suffering and misfortune for others. Young witches might study Magic by serving an Apprenticeship, or attending a Magic School.",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Witchcraft"
+      "en": "Witches"
     },
     "aliases": {
       "71TFBJ4wyAFM3i6PgA1jy": {
@@ -3413,7 +3425,7 @@
       "Tv-AA0LcCnFGt0PEeIS7e": {
         "trueAlias": false,
         "localisation": "en",
-        "en": "Witches"
+        "en": "Witchcraft"
       },
       "R2HGX8xXyCEcgESP_TONC": {
         "trueAlias": false,
@@ -3429,7 +3441,7 @@
     "alternateSpellings": [
       {
         "target": "default",
-        "regex": "witch(?:es|ery){0,1}|hag"
+        "regex": "witch(?:craft|ery){0,1}|hag"
       }
     ]
   },
@@ -3507,10 +3519,15 @@
     "description": "These manga focus on a relationship between students who are in different grade levels. Upperclassmen are known as \"senpai\" (先輩), while underclassmen are referred to as \"kouhai\" (後輩). Notice me, senpai! ",
     "defaultLocalisation": "en",
     "translations": {
-      "en": "Senpai-Kouhai Relationship"
+      "en": "Senpai-Kōhai Relationship"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "senpai[-_ ]{0,1}k(?:ou|ō)hai[-_ ]{0,1}relationships{0,1}"
+      }
+    ]
   },
   {
     "id": "rsAvsu9mmvf-A5g3B44pe",
@@ -3531,10 +3548,15 @@
     "translations": {
       "en": "Young Woman",
       "jp": "少女",
-      "ro_jp": "Shoujo"
+      "ro_jp": "Shōjo"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "shoujo"
+      }
+    ]
   },
   {
     "id": "TNS8dLnte_s2VMXTJvvIO",
@@ -3553,11 +3575,16 @@
     "description": "These manga feature Youkai: Supernatural spirits that originate from Japanese Folklore. Common examples include the Kappa, Kitsune, and Yuki-onna.",
     "defaultLocalisation": "ro_jp",
     "translations": {
-      "ro_jp": "Youkai",
+      "ro_jp": "Yōkai",
       "jp": "妖怪"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "youkai"
+      }
+    ]
   },
   {
     "id": "FFLz2D-hRM2tIvN9Mum3g",
@@ -4092,17 +4119,93 @@
   },
   {
     "id": "KMrJRGscw5qLwlcDIzI8U",
-    "type": "genre",
+    "type": "theme",
     "description": "",
     "defaultLocalisation": "en",
     "translations": {
       "en": "Sports"
     },
-    "aliases": {},
+    "aliases": {
+      "sC2f83QAUEzvJUc34GlEJ": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Rubgby"
+      },
+      "ELJ-ShpkfRdY7nI3UBR1h": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Athletics"
+      },
+      "ZD8X_Loh3gr3J6t75Ec4W": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Badminton"
+      },
+      "o4FMHuf1er1bRaKdGwy6c": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "American Football"
+      },
+      "JJkVzGryAdjm8w_Jl4TM5": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Boxing"
+      },
+      "SO6ttR0Fe2s-6GrWoEBRW": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Cycling"
+      },
+      "N0BQAF-yQyVIJHuMfhW5Z": {
+        "trueAlias": false,
+        "localisation": "en",
+        "en": "Fitness"
+      },
+      "u-7bzyxBSbC8cWxgNeFz4": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Fishing"
+      },
+      "sJ_D90bhpthR9eDooXk38": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Ice Skating"
+      },
+      "4zwwPjZR408Pw4-7qR1R_": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Table Tennis"
+      },
+      "iZCPT2m5rUtcQ0Tik89A3": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Tennis"
+      },
+      "Lr-1JQH3aKZ-wXzAv-bx1": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Volleyball"
+      },
+      "qBhix9J_XcXMKVnrwHSLw": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Wrestling"
+      },
+      "Z0RmnbuHQJHb3YXADgIJ4": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Basketball"
+      }
+    },
     "alternateSpellings": [
       {
         "target": "default",
         "regex": "sport"
+      },
+      {
+        "target": "alias",
+        "id": "Z0RmnbuHQJHb3YXADgIJ4",
+        "regex": "basket[-_ ]{0,1}balls{0,1}"
       }
     ]
   },
@@ -4305,6 +4408,760 @@
     "translations": {
       "ro_jp": "Deredere",
       "jp": "デレデレ"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "GgQFqSsUCOxleDANB4cDo",
+    "type": "theme",
+    "description": "Stories that happen out of chronological order.",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Achronological Order"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "5wSraUjyiK6l2-HsNEeAc",
+    "type": "theme",
+    "description": "Stories that either take place in a universe alternate to ours or that different from the universe of the main story line of the series.",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Alternate Universe"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "xRpdotmgu4H3WMstjy1nm",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Anti-hero"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "4uxuE88bj-U7jG3T7K3gQ",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Augmented Reality"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "-lPqpeRAdJ6XBGv8AASih",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Bar"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "hsiUrbHklu5d63YH7gXPE",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Biographical"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "wmwRcTl-QfdEpaG8qc7bD",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Bixsexual"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "oji6BQF9bpXZKTrcIA5HV",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Calligraphy"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "RomYxM2CdxEfgABgMwgOL",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "CGI"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "7TnMNfulBQidr29DWxTuk",
+    "type": "theme",
+    "description": "Middle school second-year syndrom. These stories typically revolve around characters that exhibit delusional behaviour and grandiose fantasies. They often believe they posses special powers.",
+    "defaultLocalisation": "ro_jp",
+    "translations": {
+      "ro_jp": "Chūnibyō"
+    },
+    "aliases": {},
+    "alternateSpellings": [
+      { "target": "default", "regex": "ch(?:ū|uu)niby(?:ō|ou)" }
+    ]
+  },
+  {
+    "id": "C521qrc3Pb5wKTSNrxiiD",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Cultivation"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "Lw0_wzLRmF86UrKmuFxIz",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Classic Literature"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "qHsvo43L7JOg96GJiXQRG",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Cute Girls Doing Cute Things"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "RrDLzAMtL-RCZCtUKR2G-",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Cosplay"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "a5hSTnoOyPRaDKveEW40o",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Development"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "LC0P8nSFuWiUp3Ulqn5cT",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Drawing"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "Qt-GtLuKwTKXJfKE3iCvD",
+    "type": "genre",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "genre": "Utopia"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "1Xex2ZtKmojykKtj_h8AI",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Economics"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "M2J85iSCRx_aHWCHkkavx",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Educational"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "Pnk0QCm-mYXRa2lWFIx4V",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Ensemble Cast"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "P-k4Y0gW1hy9UUIrSUZBP",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Environmental"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "x7WkmAsa61HvUofwIx9SV",
+    "type": "genre",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Fairy Tale"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "VxBhwStXwsgifGEd-gSd-",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Female Protagonist"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "nTgdE4eCoU3Pbie99zPqn",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Male Protagonist"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "X6gO0qPvPQB86T1ng8SV2",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Foreign"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "n35atMgZJtJ29BrS7Yd4Q",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Fugitive"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "LKvlNCvOM-CVH3tRCCL7C",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Full CGI"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "full[-_]{0,1}cgi"}]
+  },
+  {
+    "id": "g8LM4jR8-GiNsLnimQZzI",
+    "type": "format",
+    "description": "Refers to volumised (split into volumes) manga.",
+    "defaultLocalisation": "ro_jp",
+    "translations": {
+      "ro_jp": "Tankoubon"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "kSdjcVcO6gLXJMWOX-Zfk",
+    "type": "theme",
+    "description": "First person stories that don't depict the first person as having a gender.",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Gender  Neutral"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "gender[-_]{0,1}neutral"}]
+  },
+  {
+    "id": "prQ5IasYHngmjlhRu_iNa",
+    "type": "theme",
+    "description": "Stories where the characters in the story talk directly to the reader, often writen as self inserts where the main character is supposed to be the reader.",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Talking to Reader"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "talk(?:ing){0,1}[-_ ]{0,1}to[-_ ]{0,1}(?:reader|viewer)"}]
+  },
+  {
+    "id": "J2fKXtdYxdrOYYSPwBxeM",
+    "type": "theme",
+    "description": "Stories that revolve around guns and their use.",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Guns"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "wFVaVzMdVqdysHOG2qvys",
+    "type": "theme",
+    "description": "Stories that revolve around individuals that can transform or metamorph into other beings/things.",
+    "defaultLocalisation": "ro_jp",
+    "translations": {
+      "ro_jp": "Henshin"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "cseagtc4oX-rsK_G82vwD",
+    "type": "theme",
+    "description": "Stories that revolve around individuals that are withdrawn from society to an insane degree. Isolating themselves from social and outdoor situations.",
+    "defaultLocalisation": "ro_jp",
+    "translations": {
+      "en": "Shut-in",
+      "ro_jp": "Hikikomori"
+    },
+    "aliases": {},
+    "alternateSpellings": [{ "target": "default", "regex": "shut[-_ ]{0,1}ins{0,1}|hikikomoris" }]
+  },
+  {
+    "id": "789O5m2ne6SoVwYA6NiLg",
+    "type": "theme",
+    "description": "A traditional Japanese card game that combines elements of poetry, memory, and speed.",
+    "defaultLocalisation": "ro_jp",
+    "translations": {
+      "ro_jp": "Karuta"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "ctw5NCTLgkg_kFaErT7Nz",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Children"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "LGlNrY01XF5EmWRDQM7sp",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Love Triangle"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "love[-_]triangles{0,1}"}]
+  },
+  {
+    "id": "sAhsve1Fjq0lawIziR0P7",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Mahjong"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "feeaRT2xSL5XLAlT5sC8D",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Memory Manipulation"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "memory[-_ ]{0,1}(?:manitulat(?:ing|ion|ed{0,1})|edit(?:s|ing)|chang(?:e|ing)|swap(?:ing){0,1})"}]
+  },
+  {
+    "id": "fTd-1l5zJkO09CWC6cMqd",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Meta"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "LgbiC20gPaxVQHeM1rtL_",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Mopeds"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "snVIHT4ipAKHWMpd8k5OP",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Motorcycles"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "fIPAZSdmMCv_Uie2pDR1g",
+    "type": "genre",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "genre": "Musical"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "XycVfC1B2w90Enhxv5_xm",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Mythology"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "mythologic(?:al){0,1}"}]
+  },
+  {
+    "id": "3k-2d46EbgZ_WXrNnnLBr",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Nudity"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "nude|naked|no[-_ ]{0,1}cloth(?:es|ing|s)"}]
+  },
+  {
+    "id": "NXWkX5Ug_IpPAOIthItQ2",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Otaku Culture"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "otaku[-_]{0,1}culture"}]
+  },
+  {
+    "id": "UXN7331-1ypwKBJR2DX8x",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Outdoor"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "outdoors"}]
+  },
+  {
+    "id": "tPqXdifTzzCyzHIYnpn1T",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Photography"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "skDZL9eYLx3IqqVoS0-g3",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Primarily Adult Cast"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "primar(?:ily|y)[-_ ]{0,1}adults{0,1}[-_ ]{0,1}(?:cast(?:ing|ed){0,1}|characters)"}]
+  },
+  {
+    "id": "cGwg3lYb_sQ2O8iQv91pY",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Primarily Female Cast"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "primar(?:ily|y)[-_ ]{0,1}(?:females{0,1}|wom[ae]n|girls{0,1}|lad(?:y|ies)[-_ ]{0,1}(?:cast(?:ing|ed){0,1}|characters)"}]
+  },
+  {
+    "id": "fuLV8WlUSlUNSeFPXWjxO",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Primarily Male Cast"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "primar(?:ily|y)[-_ ]{0,1}(?:males{0,1}|m[ae]n|guys{0,1}|dudes{0,1}[-_ ]{0,1}(?:cast(?:ing|ed){0,1}|characters)"}]
+  },
+  {
+    "id": "5EOPIF8j6cmUg0J0nZtrV",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Puppetry"
+    },
+    "aliases": {
+      "7CVPM2MCRytuCAloyW4lf": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Human Puppet"
+      }
+    },
+    "alternateSpellings": [
+      {"target": "default", "regex": "puppets{0,1}"}
+    ]
+  },
+  {
+    "id": "wEx4ShB9w2TmCXkJjF2dy",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Rehabilitation"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "xXTKJ2ZrSpRKPMdp0rAR5",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Robots"
+    },
+    "aliases": {
+      "zmt52iU0MDiGCLGCfy_m0": {
+        "trueAlias": true,
+        "localisation": "en",
+        "en": "Real Robot"
+      }
+    },
+    "alternateSpellings": [{"target": "default", "regex": "robot(?:ics){0,1}"}]
+  },
+  {
+    "id": "Za9tstmtP9KM5QKj92Aw2",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Rural"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "HEoNGy9TTQSZZoWqDsMcd",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "School"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "scho(?:ols{0,1}|ing|lastic)"}]
+  },
+  {
+    "id": "MYunhJuO_uUa94_R28fFr",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Ships"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "LX99OMdJ_XR2T1Gln1jKw",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "ro_jp",
+    "translations": {
+      "en": "Shogi"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "P6ndNuO12qD_D7xn2ILZ2",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Slavery"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "(?:sex[-_ ]{0,1}){0,1}slave(?:s|ry){0,1}"}]
+  },
+  {
+    "id": "65E6hoj7qNKsMjaXQjQEs",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Space"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "(?:the[-_ ]{0,1}){0,1}cosm(?:os|ic)"}]
+  },
+  {
+    "id": "rSn0rRHMv02nb3O5eB8DD",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Stop Motion"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "stop[-_]{0,1}motion"}]
+  },
+  {
+    "id": "WmGcsa29_nsHYud0-lnsf",
+    "type": "theme",
+    "description": "Stories that feature or revolve around nations with exceptional or notable power in the region they exist in.",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Super Power"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "IFJZ4A4pako9Fn4rOX1a2",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Swordplay"
+    },
+    "aliases": {},
+    "alternateSpellings": []
+  },
+  {
+    "id": "a9IFzVyG3wOqSQPUPKW7a",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Tanks"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "tank"} ]
+  },
+  {
+    "id": "j4yhs1IsRjeWWI4kJqS_q",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Time Manipulation"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "time[-_ ]{0,1}manipulat(?:ion|ing|e)"}]
+  },
+  {
+    "id": "Dc5UKpkeKf9B_zb2XuwIM",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Time Skip"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "time[-_ ]{0,1}skip(?:s|ing){0,1}"}]
+  },
+  {
+    "id": "EFQdezI7JxfjFYh1ucDmX",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Trains"
+    },
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "train"}]
+  },
+  {
+    "id": "wv7pD9eTwUZTsB1G9lQi_",
+    "type": "theme",
+    "description": "",
+    "defaultLocalisation": "en",
+    "translations": {
+      "en": "Writing"
     },
     "aliases": {},
     "alternateSpellings": []
