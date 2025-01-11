@@ -4632,7 +4632,7 @@
       "en": "Ensemble Cast"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [{"target": "default", "regex": "ensemble[-_]cast"}]
   },
   {
     "id": "P-k4Y0gW1hy9UUIrSUZBP",
@@ -4643,7 +4643,7 @@
       "en": "Environmental"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [{"target": "default", "regex": "environment(?:alists{0,1}){0,1}"}]
   },
   {
     "id": "x7WkmAsa61HvUofwIx9SV",
@@ -4654,7 +4654,7 @@
       "en": "Fairy Tale"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [{"target": "default", "regex": "fairy[-_]tales{0,1}"}]
   },
   {
     "id": "VxBhwStXwsgifGEd-gSd-",
@@ -4665,7 +4665,7 @@
       "en": "Female Protagonist"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [{"target": "default", "regex": "female[-_]protag(?:gonists{0,1}|s){0,1}"}]
   },
   {
     "id": "nTgdE4eCoU3Pbie99zPqn",
@@ -4676,7 +4676,7 @@
       "en": "Male Protagonist"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [{"target": "default", "regex": "male[-_]protag(?:gonists{0,1}|s){0,1}"}]
   },
   {
     "id": "X6gO0qPvPQB86T1ng8SV2",
@@ -4687,7 +4687,7 @@
       "en": "Foreign"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [{"target": "default", "regex": "forgein[-_]produced(?:[-_]man(?:ga|hwa|hua)){0,1}"}]
   },
   {
     "id": "n35atMgZJtJ29BrS7Yd4Q",
@@ -4698,7 +4698,7 @@
       "en": "Fugitive"
     },
     "aliases": {},
-    "alternateSpellings": []
+    "alternateSpellings": [{"target": "default", "regex": "fugitives"}]
   },
   {
     "id": "LKvlNCvOM-CVH3tRCCL7C",
