@@ -238,17 +238,17 @@
       "ro_jp": "Kemonomimi"
     },
     "aliases": {
-      "tempid1": {
+      "xZo6Pif0SaPh5HVJkeGP1": {
         "trueAlias": "false",
         "localisation": "en",
         "en": "Animal Characteristics"
       },
-      "tempid2": {
+      "KVwz2iG7qSSPEnjoxiO03": {
         "trueAlias": true,
         "localisation": "en",
         "en": "Furry"
       },
-      "tempid3": {
+      "RVckD0xeKVNB7n1-Poaix": {
         "trueAlias": "true",
         "localisation": "default",
         "en": "Cat Girl",
@@ -258,12 +258,12 @@
     "alternateSpellings": [
       {
         "target": "alias",
-        "id": "tempid1",
+        "id": "xZo6Pif0SaPh5HVJkeGP1",
         "regex": "animal(?:istic){0,1}[-_]{0,1}characteristics{0,1}"
       },
       {
         "target": "alias",
-        "id": "tempid3",
+        "id": "RVckD0xeKVNB7n1-Poaix",
         "regex": "(?:cat[-_ ]girls{0,1})|(?:neko[-_ ](?:mimi|girls{0,1}))"
       }
     ]
@@ -4625,6 +4625,26 @@
         "target": "alias",
         "id": "Z0RmnbuHQJHb3YXADgIJ4",
         "regex": "basket[-_ ]{0,1}balls{0,1}"
+      },
+      {
+        "target": "alias",
+        "id": "o4FMHuf1er1bRaKdGwy6c",
+        "regex": "american[-_]football"
+      },
+      {
+        "target": "alias",
+        "id": "4zwwPjZR408Pw4-7qR1R_",
+        "regex": "table[-_]tennis"
+      },
+      {
+        "target": "alias",
+        "id": "sJ_D90bhpthR9eDooXk38",
+        "regex": "ice[-_]skating"
+      },
+      {
+        "target": "alias",
+        "id": "Lr-1JQH3aKZ-wXzAv-bx1",
+        "regex": "volly[-_ ]ball"
       }
     ]
   },
