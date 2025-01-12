@@ -169,7 +169,7 @@
     "alternateSpellings": [
       {
         "target": "default",
-        "regex": "(?:all[_- ]){0,1}(?:boys{0,1}|guys{0,1}|m[ea]ns{0,1}){0,1}[-_ ](?:school|college|university|academy)"
+        "regex": "(?:all[-_ ]){0,1}(?:boys{0,1}|guys{0,1}|m[ea]ns{0,1}){0,1}[-_ ](?:school|college|university|academy)"
       }
     ]
   },
@@ -398,7 +398,7 @@
     "alternateSpellings": [
       {
         "target": "default",
-        "regex": "(?:air[o-_ ]{0,1}(?:craft|planes{0,1}))|(?:avi(?:onics|ating)"
+        "regex": "(?:air[-_ o]{0,1})(?:craft|planes{0,1}))|(?:avi(?:onics|ating)"
       }
     ]
   },
@@ -2803,14 +2803,8 @@
     "translations": {
       "en": "Pirates"
     },
-    "aliases": {
-      "V6uMYLXTmMMg5FqgeOrmp": {
-        "trueAlias": false,
-        "localisation": "en",
-        "en": "Pirate"
-      }
-    },
-    "alternateSpellings": [{"target": "default", "regex": "pirates"}]
+    "aliases": {},
+    "alternateSpellings": [{"target": "default", "regex": "pirate"}]
   },
   {
     "id": "aec4gjfuB-TmElpOuuGNZ",
@@ -5516,7 +5510,7 @@
     "alternateSpellings": [
       {
         "target": "default",
-        "regex": "primar(?:ily|y)[-_ ](?:females{0,1}|wom[ae]n|girls{0,1}|lad(?:y|ies)[-_ ](?:cast(?:ing|ed){0,1}|characters)"
+        "regex": "(?:primar(?:ily|y)[-_ ]){0,1}(?:females{0,1}|wom[ae]n|girls{0,1}|lad(?:y|ies))[-_ ](?:cast(?:ing|ed){0,1}|characters)"
       }
     ]
   },
@@ -5532,7 +5526,7 @@
     "alternateSpellings": [
       {
         "target": "default",
-        "regex": "primar(?:ily|y)[-_ ](?:males{0,1}|m[ae]n|guys{0,1}|dudes{0,1}[-_ ](?:cast(?:ing|ed){0,1}|characters)"
+        "regex": "(?:primar(?:ily|y)[-_ ]){0,1}(?:males{0,1}|m[ae]n|guys{0,1}|dudes{0,1})[-_ ](?:cast(?:ing|ed){0,1}|characters)"
       }
     ]
   },
@@ -5595,7 +5589,7 @@
         "regex": "robot(?:ics){0,1}"
       },
       {
-        "target": "default",
+        "target": "alias",
         "id": "zmt52iU0MDiGCLGCfy_m0",
         "regex": "real[-_ ]robot(?:ics|s){0,1}"
       }
