@@ -25,6 +25,15 @@ class Tag:
         self.localisation = json["defaultLocalisation"]
         self.name = json["translations"][self.localisation]
 
+    def json(self):
+        return {
+            "parent_id": self.parent_id,
+            "id": self.id,
+            "name": self.name,
+            "localisation": self.localisation,
+            "alias": self.is_alias
+        }
+
 
 class TagTools:
     tags = []

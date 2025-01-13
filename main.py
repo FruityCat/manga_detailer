@@ -6,6 +6,7 @@ import nanoid
 import json
 
 from mangadex import MangadexFetcher
+from tag_tools import TagTools
 
 # from jsonschema import validate, ValidationError
 
@@ -26,12 +27,12 @@ PARSER = argparse.ArgumentParser(
 )
 
 
-def choose_fetcher(domain):
+def choose_fetcher(domain, url_segments):
     """
     I want a switch case please... ;~;
     """
     if domain == "mangadex.org":
-        return MangadexFetcher()
+        return MangadexFetcher(url_segments)
     if domain == "anilist.co":
         pass
     if domain == "anime-planet.com":
@@ -81,6 +82,7 @@ def update_fetchers(url, fetchers, type) -> dict:
 
 
 def main():
+    TagTools.reload()
     global PARSER
     global DETAILS_TEMPLATE
     details = {}
@@ -131,7 +133,7 @@ def main():
     PARSER.add_argument(
         "-f",
         "--force-refresh",
-        dest="force refresh",
+        dest="force_refresh",
         default=False,
         help="Whether to force refresh ID.",
         action=argparse.BooleanOptionalAction,
@@ -160,7 +162,7 @@ def main():
             previous_details = json.load(details)
 
     if (
-        not args["force refresh"][0]
+        not args.force_refresh
         and "id" in previous_details  # noqa: W503
         and previous_details["id"] != ""  # noqa: W503
     ):
