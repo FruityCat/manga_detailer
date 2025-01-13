@@ -10,6 +10,7 @@ from mangadex import MangadexFetcher
 # from jsonschema import validate, ValidationError
 
 
+# See get_url_segments(url) -> dict
 CONST_URL_PATTERN = re.compile(
     r"^(?P<scheme>https?)://" r"(?P<domain>[^/]+)" r"(?P<path>/[^?]*)?"
 )
@@ -26,6 +27,9 @@ PARSER = argparse.ArgumentParser(
 
 
 def choose_fetcher(domain):
+    """
+    I want a switch case please... ;~;
+    """
     if domain == "mangadex.org":
         return MangadexFetcher()
     if domain == "anilist.co":
@@ -36,7 +40,15 @@ def choose_fetcher(domain):
         pass
 
 
-def get_url_segments(url):
+def get_url_segments(url) -> dict:
+    """
+    Splits URL into scheme (protocol), domain, path
+    EG: {
+        "scheme": "https",
+        "domain", "mangadex.org",
+        "path": "/manga/ABCEXAMPLEMANGA123"
+    }
+    """
     match = CONST_URL_PATTERN.match(url)
     meta_url_segments = {}
     if match:
@@ -45,17 +57,22 @@ def get_url_segments(url):
     return None
 
 
-def update_fetchers(url, fetchers, type):
+def update_fetchers(url, fetchers, type) -> dict:
+    """
+    We want to keep a dict of {domain: fetcher} where each fetcher can have a content type
+    that it fetches.
+
+    When we add a fetcher, if the domain exists, just add the content type to its fetcher
+    but if not, add fetcher to domain and set content type.
+    """
     segments = get_url_segments(url)
     if not segments:
         print(f"Failed to return segments for metadata URL: {url}. Skipping.")
-        return
+        return fetchers
     print(
         f"Successfully found segment fetcher for {segments["domain"]}{segments["path"]}. Scraping..."
     )
 
-    # We want to either add more information for a fetcher to fetch or if the fetcher doesn't exist
-    # add it as a fetcher source.
     if segments["domain"] not in fetchers:
         fetchers[segments["domain"]] = choose_fetcher(segments["domain"], segments)
 
@@ -130,6 +147,7 @@ def main():
     if directory.startswith("./") or directory.startswith(".\\"):
         directory = f"{os.getcwd()}{dirlim}{directory[2:]}"
 
+    # Build the fetcher army!!! c:<
     if args.meta:
         fetchers = update_fetchers(args.meta[0], fetchers, "meta")
     if args.tags:
@@ -150,8 +168,12 @@ def main():
     else:
         details["id"] = nanoid.generate()
 
-    with open(f"{software_dir}/details_template.json", "r") as template:
-        DETAILS_TEMPLATE = json.load(template)
+    for domain, fetcher in fetchers.items():
+        new_details = fetcher.run()
+        print(new_details)
+
+    # with open(f"{software_dir}/details_template.json", "r") as template:
+    #     DETAILS_TEMPLATE = json.load(template)
 
     # try:
     #     with (open(f"{software_dir}/schema.json", "r")) as file:
@@ -162,8 +184,8 @@ def main():
     #     print(f"{ValidationError}")
     #     return
 
-    with open(f"{directory}/details.json", "w") as details:
-        print("Writing to details.json not implemented yet.")
+    # with open(f"{directory}/details.json", "w") as details:
+    #     print("Writing to details.json not implemented yet.")
 
 
 if __name__ == "__main__":

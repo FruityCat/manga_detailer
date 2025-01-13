@@ -1,6 +1,8 @@
 import json
 import requests
 
+from tag_tools import TagTools
+
 
 class MangadexFetcher:
     content = []
@@ -88,17 +90,19 @@ class MangadexFetcher:
     def build_tags(self):
         tags = []
         for tag in self.metadata["data"]["attributes"]["tags"]:
-            tags.append(TagTools.find(tag["attributes"]["name"]["en"]))
+            tag_actual = TagTools.find(tag["attributes"]["name"]["en"])
+            if tag_actual:
+                tags.append(tag_actual)
+        print(f"Found {len(tags)} tags out of {len(self.metadata["data"]["attributes"]["tags"])}.")
 
     def build_releases():
         pass
 
-    def get_details(self):
-        if "meta" in self.content:
-            self.build_metadata()
-        if "tags" in self.content:
-            self.build_tags()
-        if "releases" in self.content:
-            self.build_releases()
-
-        return self.details
+    def run(self):
+        builders = {
+            "meta": self.build_meta,
+            "tags": self.build_tags,
+            "releases": self.build_releases
+        }
+        for content_type in self.content:
+            builders[content_type]()

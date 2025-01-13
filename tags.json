@@ -659,7 +659,9 @@
       "en": "Cars"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "(?:race[-_ ]{0,1}){0,1}car"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "(?:race[-_ ]{0,1}){0,1}car" }
+    ]
   },
   {
     "id": "CsLWSy0lmc44s5yrmluPl",
@@ -697,7 +699,9 @@
       "en": "Cheerleading"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "che[ea]rlead(?:ing|ers{0,1}){0,1}"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "che[ea]rlead(?:ing|ers{0,1}){0,1}" }
+    ]
   },
   {
     "id": "oXwK32zhUTDAaiTQJHlQD",
@@ -719,7 +723,7 @@
       "en": "Childcare"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "child[-_]care"}]
+    "alternateSpellings": [{ "target": "default", "regex": "child[-_]care" }]
   },
   {
     "id": "OUnzo2U3ls0aRKTBgOSKP",
@@ -778,7 +782,7 @@
       "en": "Christianity"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "christians{0,1}"}]
+    "alternateSpellings": [{ "target": "default", "regex": "christians{0,1}" }]
   },
   {
     "id": "9QDPJFxSDHqw2nu2sOot4",
@@ -789,7 +793,7 @@
       "en": "Christmas"
     },
     "aliases": {},
-    "alternateSpellings": [{"target":"default", "regex": "xmas"}]
+    "alternateSpellings": [{ "target": "default", "regex": "xmas" }]
   },
   {
     "id": "SRPLXCXOriklvGOeXoc_p",
@@ -1346,7 +1350,7 @@
       "en": "Dungeon"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "dungeons"}]
+    "alternateSpellings": [{ "target": "default", "regex": "dungeons" }]
   },
   {
     "id": "MzOCBE8nTcFuR3h8Wrfez",
@@ -1421,7 +1425,7 @@
       "en": "Elf"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "elve(?:s|n){0,1}"}]
+    "alternateSpellings": [{ "target": "default", "regex": "elve(?:s|n){0,1}" }]
   },
   {
     "id": "ZZFC80gzGMDbaEHla61cD",
@@ -2142,7 +2146,12 @@
       "en": "Kidnapping"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "kid[-_ ]nap{0,1}(?:ping|pers{0,1}|ped){0,1}"}]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "kid[-_ ]nap{0,1}(?:ping|pers{0,1}|ped){0,1}"
+      }
+    ]
   },
   {
     "id": "ksWrf00Uxjv2oBKNUkeec",
@@ -2442,7 +2451,12 @@
       "en": "MMORPG"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "mmo[-_ ]rpg|massive(?:ly){0,1}[-_]online[-_]multi[-_ ]{0,1}player[-_]role[-_ ]{0,1}playing[-_]games{0,1}"}]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "mmo[-_ ]rpg|massive(?:ly){0,1}[-_]online[-_]multi[-_ ]{0,1}player[-_]role[-_ ]{0,1}playing[-_]games{0,1}"
+      }
+    ]
   },
   {
     "id": "_-_PTLmwR7429-CLNkOmi",
@@ -2567,7 +2581,9 @@
       "en": "Neighbours"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "neighbou{0,1}rs{0,1}"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "neighbou{0,1}rs{0,1}" }
+    ]
   },
   {
     "id": "AjBOsQZXx3CRPmaALIfsQ",
@@ -2594,7 +2610,7 @@
       "en": "Ninja"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "ninjas"}]
+    "alternateSpellings": [{ "target": "default", "regex": "ninjas" }]
   },
   {
     "id": "qEC2Y8D1naLiKXMe5Mmmg",
@@ -2605,7 +2621,7 @@
       "en": "Nobility"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "nobels{0,1}"}]
+    "alternateSpellings": [{ "target": "default", "regex": "nobels{0,1}" }]
   },
   {
     "id": "JM9mEAyGS8KwRfen3wRFr",
@@ -2659,7 +2675,9 @@
       "en": "Nurse"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "nurse(?:s|ing){0,1}"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "nurse(?:s|ing){0,1}" }
+    ]
   },
   {
     "id": "MmaQXGuwfBDqYanDJlKzq",
@@ -2804,7 +2822,7 @@
       "en": "Pirates"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "pirate"}]
+    "alternateSpellings": [{ "target": "default", "regex": "pirate" }]
   },
   {
     "id": "aec4gjfuB-TmElpOuuGNZ",
@@ -2874,7 +2892,9 @@
       "en": "Polyamory"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "poly(?:amorous){0,1}"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "poly(?:amorous){0,1}" }
+    ]
   },
   {
     "id": "xWxfFR--WpIfohoPNvXR5",
@@ -2935,8 +2955,12 @@
       }
     },
     "alternateSpellings": [
-      {"target": "default", "regex": "pregnant"},
-      {"target": "alias", "id": "q9dFSy4928-8Z_Rl_7Lkh", "regex": "impregnated{0,1}"}
+      { "target": "default", "regex": "pregnant" },
+      {
+        "target": "alias",
+        "id": "q9dFSy4928-8Z_Rl_7Lkh",
+        "regex": "impregnated{0,1}"
+      }
     ]
   },
   {
@@ -3008,7 +3032,12 @@
       "en": "PVE"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "player[-_ ](?:vs|verses)[-_ ]environment"}]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "player[-_ ](?:vs|verses)[-_ ]environment"
+      }
+    ]
   },
   {
     "id": "xNP9LRAmIE9zuYhnLEwH9",
@@ -3019,7 +3048,9 @@
       "en": "PVP"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "player[-_ ](?:vs|verses)[-_ ]player"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "player[-_ ](?:vs|verses)[-_ ]player" }
+    ]
   },
   {
     "id": "jQanqhT3IHsXhr3BZTA41",
@@ -3041,7 +3072,9 @@
       "en": "Reincarnation"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "re[-_]incarnat(?:ed|ion)"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "re[-_]incarnat(?:ed|ion)" }
+    ]
   },
   {
     "id": "leKmH-_wMBdOg2fhoNGTf",
@@ -3063,7 +3096,9 @@
       "en": "Remarriage"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "re-marr(?:iage|y(?:ing){0,1})"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "re-marr(?:iage|y(?:ing){0,1})" }
+    ]
   },
   {
     "id": "51oZ30d__4AIhu9hevNvQ",
@@ -3139,7 +3174,9 @@
       "en": "Roommate"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "room[-_ ]{0,1}mates{0,1}"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "room[-_ ]{0,1}mates{0,1}" }
+    ]
   },
   {
     "id": "cRoh9WrHqe6HxYuz8Isob",
@@ -3150,7 +3187,9 @@
       "en": "Salaryman"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "sal[ae]ry[-_ ]{0,1}m[ae]n{0,1}"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "sal[ae]ry[-_ ]{0,1}m[ae]n{0,1}" }
+    ]
   },
   {
     "id": "kOPvHjAyp3JxgrLZHiGVd",
@@ -3161,7 +3200,7 @@
       "en": "Samurai"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "samurais"}]
+    "alternateSpellings": [{ "target": "default", "regex": "samurais" }]
   },
   {
     "id": "5VYuPMQqgiqH8QvAL9JbE",
@@ -3172,7 +3211,7 @@
       "en": "Satire"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "satirical"}]
+    "alternateSpellings": [{ "target": "default", "regex": "satirical" }]
   },
   {
     "id": "rFgnrh1FjWbLTxnZg69zE",
@@ -3295,7 +3334,9 @@
       "en": "Showbiz"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "show[-_ ](?:biz|business)"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "show[-_ ](?:biz|business)" }
+    ]
   },
   {
     "id": "vx_siORZVx8hNmK4XHBc2",
@@ -3306,7 +3347,7 @@
       "en": "Siblings"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "sibling"}]
+    "alternateSpellings": [{ "target": "default", "regex": "sibling" }]
   },
   {
     "id": "m1xKT7LTjL18hpnADR1FO",
@@ -3442,7 +3483,7 @@
       "en": "Stalker"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "stalk(?:ers|ing)"}]
+    "alternateSpellings": [{ "target": "default", "regex": "stalk(?:ers|ing)" }]
   },
   {
     "id": "fB3-MWFYIUCSzedJdIGF7",
@@ -3469,7 +3510,7 @@
       "en": "Steampunk"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "steam[-_]punk"}]
+    "alternateSpellings": [{ "target": "default", "regex": "steam[-_]punk" }]
   },
   {
     "id": "6AtTL58y276m5XHI9MwoJ",
@@ -3544,7 +3585,7 @@
       "en": "Supernatural"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "super[-_]natural"}]
+    "alternateSpellings": [{ "target": "default", "regex": "super[-_]natural" }]
   },
   {
     "id": "gMvYP4lKL8Gv3w8-mJZuo",
@@ -3623,7 +3664,7 @@
       "en": "Terrorism"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "terrorist"}]
+    "alternateSpellings": [{ "target": "default", "regex": "terrorist" }]
   },
   {
     "id": "J7GUJMXRO2ZxVHuRe4jmv",
@@ -3725,7 +3766,9 @@
       "en": "Vigilante"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "vigilantes{0,1}(?:[-_ ]justice){0,1}"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "vigilantes{0,1}(?:[-_ ]justice){0,1}" }
+    ]
   },
   {
     "id": "z_mrz8B1h1yGFK3IuVZ0_",
@@ -3908,7 +3951,7 @@
       "en": "Zombie"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "zombies"}]
+    "alternateSpellings": [{ "target": "default", "regex": "zombies" }]
   },
   {
     "id": "c5NxFOcj1HnrC0Y9hVSDw",
@@ -4448,7 +4491,7 @@
       "en": "Adaption"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "adapted"}]
+    "alternateSpellings": [{ "target": "default", "regex": "adapted" }]
   },
   {
     "id": "9xF-G0Tnrrwcx00WtHGjV",
@@ -4785,7 +4828,12 @@
       "en": "Genderswap"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "gender[-_ ]swap(?:ping|pers{0,1}|ed|s){0,1}"}]
+    "alternateSpellings": [
+      {
+        "target": "default",
+        "regex": "gender[-_ ]swap(?:ping|pers{0,1}|ed|s){0,1}"
+      }
+    ]
   },
   {
     "id": "jz-_teobVh9hiBrOl0C1v",
@@ -5075,7 +5123,7 @@
       "en": "Economics"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "economy"}]
+    "alternateSpellings": [{ "target": "default", "regex": "economy" }]
   },
   {
     "id": "M2J85iSCRx_aHWCHkkavx",
@@ -5383,7 +5431,7 @@
       "en": "Mopeds"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "moped"}]
+    "alternateSpellings": [{ "target": "default", "regex": "moped" }]
   },
   {
     "id": "snVIHT4ipAKHWMpd8k5OP",
@@ -5394,7 +5442,9 @@
       "en": "Motorcycles"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "motor[-_ ]cycles{0,1}"}]
+    "alternateSpellings": [
+      { "target": "default", "regex": "motor[-_ ]cycles{0,1}" }
+    ]
   },
   {
     "id": "fIPAZSdmMCv_Uie2pDR1g",
@@ -5631,7 +5681,7 @@
       "en": "Ships"
     },
     "aliases": {},
-    "alternateSpellings": [{"target": "default", "regex": "naval"}]
+    "alternateSpellings": [{ "target": "default", "regex": "naval" }]
   },
   {
     "id": "LX99OMdJ_XR2T1Gln1jKw",

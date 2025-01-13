@@ -54,15 +54,27 @@ class TagTools:
                 if bool(re.match(alternate_spelling["regex"], t)):
                     target = alternate_spelling["target"]
 
-                    if target == "alias" and tag["aliases"][alternate_spelling["id"]]["trueAlias"]:
+                    if (
+                        target == "alias"
+                        and tag["aliases"][alternate_spelling["id"]]["trueAlias"]  # noqa: W503
+                    ):
                         return Tag(tag, id=alternate_spelling["id"], alias=True)
                     return Tag(tag)
 
+        print(f"[INFO] Failed to find tag for query '{t}'...")
+        return None
+
     @classmethod
     def reload(cls):
-        with open(f"{os.path.dirname(os.path.abspath(__file__))}{CONST_DIRLIM}tags.json", "r", encoding="utf-8") as file:
+        with open(
+            f"{os.path.dirname(os.path.abspath(__file__))}{CONST_DIRLIM}tags.json",
+            "r",
+            encoding="utf-8",
+        ) as file:
             cls.tags = json.load(file)
 
         for tag in cls.tags:
             for spelling in tag["alternateSpellings"]:
-                spelling["regex"] = re.compile(r'^(' + spelling["regex"] + ')$', re.IGNORECASE)
+                spelling["regex"] = re.compile(
+                    r"^(" + spelling["regex"] + ")$", re.IGNORECASE
+                )
