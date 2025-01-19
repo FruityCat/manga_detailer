@@ -167,6 +167,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-_example_json_responses
-tag_data_cleaning
-utility_scripts
+.example*
+.tag_data_cleaning
+.utility*
