@@ -1,0 +1,180 @@
+{
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "origin": { "type": "string" },
+    "originID": { "type": "array", "items": { "type": "integer" } },
+    "series": { "type": ["string", "null"] },
+    "titles": {
+      "type": "object",
+      "properties": {
+        "preferred": {  "type": "array", "items": { "type": "string" } },
+        "en": { "type": "array", "items": { "type": "string" } },
+        "jp": { "type": "array", "items": { "type": "string" } },
+        "ro_jp": { "type": "array", "items": { "type": "string" } },
+        "kr": { "type": "array", "items": { "type": "string" } },
+        "ro_kr": { "type": "array", "items": { "type": "string" } },
+        "zh-cn": { "type": "array", "items": { "type": "string" } },
+        "ro_zh-cn": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["preferred"],
+      "oneOf": [
+        {"required": ["en"]},
+        {"required": ["jp"]},
+        {"required": ["ro_jp"]},
+        {"required": ["kr"]},
+        {"required": ["ro_kr"]},
+        {"required": ["zh-cn"]},
+        {"required": ["ro-zh-cn"]}
+      ]
+    },
+    "author": { "type": "array", "items": { "type": "string" } },
+    "artist": { "type": "array", "items": { "type": "string" } },
+    "publisher": { "type": ["string", "null"] },
+    "group": { "type": ["string", "null"] },
+    "locality": { "type": "string" },
+    "description": { "type": "string" },
+    "printLanguage": { "type": "string" },
+    "originalLanguage": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string" },
+          "description": { "type": "string" },
+          "translation": { "type": "string" },
+          "translations": {
+            "type": "object",
+            "properties": {
+              "en": { "type": "string" },
+              "ro_jp": { "type": "string" },
+              "ro_kr": { "type": "string" },
+              "ro_zh-cn": { "type": "string" }
+            },
+            "additionalProperties": { "type": "string" },
+            "required": ["en", "ro_jp", "ro_kr", "ro_zh-cn"],
+            "anyOf": [
+              { "required": ["en"] },
+              { "required": ["ro_jp"] },
+              { "required": ["ro_kr"] },
+              { "required": ["ro_zh-cn"] }
+            ]
+          },
+          "aliases": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["type", "id", "translations"],
+        "contains": {
+          "anyOf": [
+            {
+              "properties": {
+                "type": { "const": "format" },
+                "translations": {
+                  "anyOf": [
+                    { "properties": { "en": { "const": "comic" } } },
+                    { "properties": { "ro_jp": { "const": "manga" } } },
+                    { "properties": { "ro_kr": { "const": "manhwa" } } },
+                    { "properties": { "ro_zh-cn": { "const": "manhua" } } }
+                  ]
+                }
+              }
+            },
+            {
+              "properties": {
+                "type": { "const": "format" },
+                "translations": {
+                  "properties": { "en": { "const": "novel" } }
+                }
+              }
+            },
+            {
+              "properties": {
+                "type": { "const": "format" },
+                "translations": {
+                  "properties": { "en": { "const": "light novel" } }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "ongoing",
+        "completed",
+        "licensed",
+        "publishing finished",
+        "cancelled",
+        "on hiatus"
+      ]
+    },
+    "translationType": {
+      "type": "string",
+      "enum": ["unknown", "raw", "publisher", "scanlation", "part scanlation"]
+    },
+    "releases": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": { "type": ["string", "null"] },
+          "isbn": { "type": ["string", "null"] },
+          "releaseDate": { "type": ["string", "null"] },
+          "pages": { "type": "string" },
+          "pageStart": { "type": ["string", "null"] },
+          "chapters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "position": { "type": "integer" },
+                "number": { "type": "integer" },
+                "en": { "type": ["string", "null"] },
+                "native": { "type": ["string", "null"] }
+              },
+              "required": ["position", "number", "en", "native"]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "isbn",
+          "releaseDate",
+          "pages",
+          "pageStart",
+          "chapters"
+        ]
+      }
+    },
+    "related": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": [
+    "id",
+    "origin",
+    "originID",
+    "series",
+    "title",
+    "author",
+    "artist",
+    "publisher",
+    "group",
+    "locality",
+    "description",
+    "printLanguage",
+    "originalLanguage",
+    "tags",
+    "status",
+    "translationType",
+    "contents"
+  ]
+}
