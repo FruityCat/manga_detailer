@@ -16,7 +16,7 @@ class MangadexFetcher:
     metadata = {}
     details = {}
 
-    def __init__(self, url):
+    def __init__(self, url) -> None:
         self.url = url
         path = url["path"].replace("/title/", "")
         self.id = path[: path.find("/")]
@@ -34,10 +34,10 @@ class MangadexFetcher:
 
         self.metadata = json.loads(response)
 
-    def add_content(self, type):
+    def add_content(self, type) -> None:
         self.content.append(type)
 
-    def fetch_titles(self):
+    def __fetch_titles(self) -> dict:
         titles = {}
         titles["preferred"] = [
             "en",
@@ -128,7 +128,7 @@ class MangadexFetcher:
 
         return titles
 
-    def build_metadata(self):
+    def __build_metadata(self) -> None:
         # Region/Language
         region = self.metadata["data"]["attributes"]["originalLanguage"]
         region_code = None
@@ -149,7 +149,7 @@ class MangadexFetcher:
             "origin": self.url["domain"],
             "originID": [self.id],
             "series": None,
-            "titles": self.fetch_titles(),
+            "titles": self.__fetch_titles(),
             "author": creators["author"],
             "artist": creators["artist"],
             "publisher": None,
@@ -171,7 +171,7 @@ class MangadexFetcher:
 
         print(json.dumps(data, indent=2, ensure_ascii=False))
 
-    def build_tags(self):
+    def __build_tags(self) -> None:
         tags = []
         tags_json = []
         for tag in self.metadata["data"]["attributes"]["tags"]:
@@ -185,14 +185,14 @@ class MangadexFetcher:
         )
         print(json.dumps(tags_json, indent=2, ensure_ascii=False))
 
-    def build_releases():
+    def __build_releases():
         pass
 
     def run(self):
         builders = {
-            "meta": self.build_metadata,
-            "tags": self.build_tags,
-            "releases": self.build_releases,
+            "meta": self.__build_metadata,
+            "tags": self.__build_tags,
+            "releases": self.__build_releases,
         }
         for content_type in self.content:
             builders[content_type]()
