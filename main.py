@@ -5,8 +5,8 @@ import re
 import nanoid
 import json
 
-from mangadex import MangadexFetcher
-from tag_tools import TagTools
+from fetchers.mangadex import MangadexFetcher
+from tagging.tag_tools import TagTools
 
 # from jsonschema import validate, ValidationError
 
