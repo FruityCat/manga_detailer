@@ -6,6 +6,7 @@ class JPTools:
     Some basic tools to work with different formats for romanised Japanese text.
     Assumes using Modified Hepburn. Traditional Hepburn (n & m for ん) not supported.
     """
+
     trans_from = str.maketrans(
         {
             "ā": "aa",
@@ -49,3 +50,30 @@ class JPTools:
         """
         p = re.compile(r"[āīūēō]", re.IGNORECASE)
         return re.search(p, text)
+
+    @staticmethod
+    def foregin_word_regex(ro, fr_ro) -> re.Pattern:
+        """
+        Constructs a regex from the foreign and katakana version of words in two soft-identical strings.
+        """
+        if ro == fr_ro:
+            return ro
+
+        words = {"ro": ro.split(" "), "fr_ro": fr_ro.split(" ")}
+
+        if len(words["ro"]) != len(words["fr_ro"]):
+            print(
+                "[WARN] Invalid arguments passed to forgein_word_regex(). Foreign and Native text should be same number of words."
+            )
+            return fr_ro
+
+        reg = ""
+        for i in range(0, len(words["ro"])):
+            if words["ro"] != words["fr_ro"]:
+                reg = reg + f"(?:{words["ro"]}|{words["fr_ro"]}) "
+                continue
+
+            reg = reg + f"{words["ro"]} "
+
+        reg = f"^({reg[:-1]})$"
+        return re.compile(reg, re.IGNORECASE)
