@@ -1,4 +1,5 @@
 import json
+import re
 import cutlet
 import requests
 
@@ -38,7 +39,13 @@ class MangadexFetcher:
 
     def fetch_titles(self):
         titles = {}
-        titles["preferred"] = ["en", "ro_jp", "jp", "kr", "zh-cn"]  # This is the order to choose preferred title in
+        titles["preferred"] = [
+            "en",
+            "ro_jp",
+            "jp",
+            "kr",
+            "zh-cn",
+        ]  # This is the order to choose preferred title in
         for title in self.metadata["data"]["attributes"]["altTitles"]:  # A
             # Flattening out JSON object
             for key, value in title.items():  # B
@@ -56,15 +63,17 @@ class MangadexFetcher:
         # we know the preferred title is ro_jp.
         # This is unlikely because alternate titles use macrons and preferred title
         # as romanised uses vowel pairs.
-        if "ro_jp" in titles:
-            # Index 0 always primary for any localisation.
-            if (
-                "en" in self.metadata["data"]["attributes"]["title"]
-                and titles["ro_jp"][0]  # noqa: W503
-                == self.metadata["data"]["attributes"]["title"]["en"]  # noqa: W503
-            ):
-                # We can return here because title is already in our list.
-                return titles
+        if "en" in self.metadata["data"]["attributes"]["title"] and "ro_jp" in titles:
+            for ro_jp in titles["ro_jp"]:
+                ro_jp_no_macrons = ro_jp
+                if JPTools.is_macronised(ro_jp):
+                    ro_jp_no_macrons = JPTools.remove_macrons(ro_jp)
+
+                if ro_jp_no_macrons != self.metadata["data"]["attributes"]["title"]["en"]:
+                    continue
+
+                titles["ro_jp"].remove("ro_jp")
+                titles["ro_jp"].insert(0, ro_jp)
 
         # If you're here, assume that ro_jp doesn't exist in alternate titles
         # and that we don't know whether title is "en": "ro_jp" or "en": "en"
@@ -78,7 +87,7 @@ class MangadexFetcher:
                 return titles
 
             if preferred_title not in titles["en"]:
-                titles["en"] = [preferred_title].extend(titles["en"])
+                titles["en"].insert(0, preferred_title)
                 return titles
 
         # Check with Cutlet
@@ -89,18 +98,33 @@ class MangadexFetcher:
         for jp in titles["jp"]:
             ro_jp = katsu.romaji(jp)
             fr_ro_jp = katsu_fr.romaji(jp)
+            reg = JPTools.foregin_word_regex(ro_jp, fr_ro_jp)
 
-            if ro_jp == preferred_title or fr_ro_jp == preferred_title:
-                # We have successfully found a match! Title is ro_jp
-                # Make sure ONLY the macronised version is in titles!
-                pass
+            if bool(re.match(reg, preferred_title)):
+                preferred_title_macronised = preferred_title
+                if not JPTools.is_macronised(preferred_title):
+                    preferred_title_macronised = JPTools.add_macrons(preferred_title)
+
+                if "ro_jp" not in titles:
+                    titles["ro_jp"] = [preferred_title_macronised]
+                    return titles
+
+                if preferred_title_macronised in titles["ro_jp"]:
+                    titles["ro_jp"].remove(preferred_title_macronised)
+                # At this point preferred_title_macronised should be in the lsit already, we just need to make
+                # sure that it's the primary one.
+                titles["ro_jp"].insert(0, preferred_title_macronised)
+                return titles
 
         # At this point the title can be dropped with a warning.
-        print("Primary title language could not be determined. Added as English")
+        print("[INFO] Primary title language could not be determined. Added as English")
         if "en" not in titles:
             titles["en"] = [preferred_title]
-        if preferred_title not in titles["en"]:
-            titles["en"] = [preferred_title].extend(titles["en"])
+            return titles
+
+        if preferred_title in titles["en"]:
+            titles["en"].remove(preferred_title)
+        titles["en"].insert(0, preferred_title)
 
         return titles
 
@@ -144,6 +168,7 @@ class MangadexFetcher:
             data["description"][self.regions["region"]] = (
                 self.metadata["data"]["attributes"]["description"][region],
             )
+
         print(json.dumps(data, indent=2, ensure_ascii=False))
 
     def build_tags(self):
